@@ -1,10 +1,12 @@
 #include <iostream>
+#include <time.h>
 using namespace std;
 
 // Hey guys this is a test
 
 
 
+int dice();
 
 int main()
 	{
@@ -16,11 +18,22 @@ int main()
 		cout << "The note reads: Welcome to Manson Hiest, where the only way to escape is to answer a bunch of riddles which reveal a secret word for you to use to escape!"
 			<< " May the odds be forever in your favor!" << endl;
 		
+		
+		
+		int Result = dice();
+		cout << "Your Number is: " << Result << endl;
+
+	
+		
 	}
 
-	int dice()
+int dice()
 	{
-		return 0;	
+	srand(time(NULL));
+	int Dice;
+	int Result = 0;
+	Result = rand() % 6 + 1;
+		return Result;	
 	}
 
 	int timer()

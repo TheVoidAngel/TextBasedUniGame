@@ -1,3 +1,4 @@
 ﻿  MansionHeist.cpp
-  LINK : C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\Debug\MansionHeistTextBased.exe not found or not built by the last incremental link; performing full link
-  MansionHeistTextBased.vcxproj -> C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\Debug\MansionHeistTextBased.exe
+C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(32,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(33,6): warning C4101: 'Dice': unreferenced local variable
+  MansionHeistTextBased.vcxproj -> C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\Debug\MansionHeistTextBased.exe
