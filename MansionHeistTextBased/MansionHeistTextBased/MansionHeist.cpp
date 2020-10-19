@@ -1,5 +1,6 @@
 #include <iostream>
 #include <time.h>
+#include <Windows.h>
 using namespace std;
 
 // Hey guys this is a test
@@ -98,6 +99,15 @@ int main()
 				//int player1 = character();
 			}
 		}
+
+		cout << "You have 10 minutes to escape (600 seconds)! " << endl;
+		
+	
+		
+			
+		
+		
+	
 		
 	}
 
@@ -124,6 +134,12 @@ int dice()
 
 	int timer()
 	{
+		int Timer = 600;
+		while (Timer > 0)
+		{
+			Sleep(1000);
+			Timer--;
+		}
 		return 0;
 	}
 
