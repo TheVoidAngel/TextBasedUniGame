@@ -1,4 +1,16 @@
 ﻿  MansionHeist.cpp
-C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(128,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(129,6): warning C4101: 'Dice': unreferenced local variable
+C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(179,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(180,6): warning C4101: 'Dice': unreferenced local variable
+C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(200,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(201,79): warning C4101: 'Riddle9': unreferenced local variable
+C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(201,52): warning C4101: 'Riddle6': unreferenced local variable
+C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(201,25): warning C4101: 'Riddle3': unreferenced local variable
+C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(201,34): warning C4101: 'Riddle4': unreferenced local variable
+C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(201,16): warning C4101: 'Riddle2': unreferenced local variable
+C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(201,88): warning C4101: 'Riddle10': unreferenced local variable
+C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(201,70): warning C4101: 'Riddle8': unreferenced local variable
+C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(201,43): warning C4101: 'Riddle5': unreferenced local variable
+C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(201,7): warning C4101: 'Riddle1': unreferenced local variable
+C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(201,98): warning C4101: 'Riddle11': unreferenced local variable
+C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(201,61): warning C4101: 'Riddle7': unreferenced local variable
   MansionHeistTextBased.vcxproj -> C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\Debug\MansionHeistTextBased.exe

@@ -8,6 +8,7 @@ using namespace std;
 int dice();
 int character();
 int rooms();
+int riddle();
 
 int main()
 	{
@@ -103,6 +104,56 @@ int main()
 		cout << "You have 10 minutes to escape (600 seconds)! " << endl;
 		
 	
+		//int Riddle1=1, Riddle2=2, Riddle3=3, Riddle4=4, Riddle5=5, Riddle6=6, Riddle7=7, Riddle8=8, Riddle9=9, Riddle10=10, Riddle11=11;
+		int random = riddle();
+		if (random == 1)
+		{
+			cout<<"What is a popular broadway show starring a historical figure from early U.S.history ? " << endl;
+		}
+		else if (random == 2)
+		{
+			cout << "I have branches, but no fruit, trunk or leaves. What am I? " << endl;
+		}
+		else if (random == 3)
+		{
+			cout << "What has to be broken before you can use it? " << endl;
+		}
+		else if (random == 4)
+		{
+			cout << "What number comes next in this pattern; 2,4,8,16,32...? " << endl;
+		}
+		else if (random == 5)
+		{
+			cout << "What has one head, one foot and four legs " << endl;
+		}
+		else if (random == 6)
+		{
+			cout << "I have two hands, but I can not scratch myself. What am I? " << endl;
+		}
+		else if (random == 7)
+		{
+			cout << " I live in the jungle, my father was killed, I am to be king of the jungle one day, I sing I can’t wait to be king. Who am I? " << endl;
+		}
+		else if (random == 8)
+		{
+			cout << "How do you make number 7 an even number without using subtraction, addition, multiplication or division? " << endl;
+		}
+		else if (random == 9)
+		{
+			cout << "What goes up and down but doesn’t move? " << endl;
+		}
+		else if (random == 10)
+		{
+			cout << "What has lots of eyes, but can’t see? " << endl;
+		}
+		else if (random == 11)
+		{
+			cout << "What has many teeth, but can’t bite? " << endl;
+		}
+
+
+		int RandomRiddle = riddle();
+		cout << "Your Riddle is: " << RandomRiddle << endl;
 		
 			
 		
@@ -145,5 +196,11 @@ int dice()
 
 	int riddle()
 	{
-		return 0;
+
+		srand(time(NULL));
+		int Riddle1, Riddle2, Riddle3, Riddle4, Riddle5, Riddle6, Riddle7, Riddle8, Riddle9, Riddle10, Riddle11;
+		int RandomRiddle = 0;
+		RandomRiddle = rand() % 11 + 1;
+		return RandomRiddle;
+		
 	}
