@@ -9,57 +9,69 @@ int dice();
 int character();
 int rooms();
 int riddle();
+int timer();
 
 int main()
 	{
 	int cont = 0;
+	string characters1;
+	retry:
 		cout << "Choose your character: " << endl << "1. Hacker: Haze (H4Z3) - Kevin Hayes" << endl << "2. Plumber: Duce Harmon" << endl << "3. Chef : Charlotte Hunter" << endl << "4. Bookworm : Vivienne Gray" << endl << "5. Bodybuilder : Jack Brooks" << endl << "6. Actor : Sebastian Moltif" << endl << "7. Normal : Ave Jones" << endl << "8. Survivalist : Vex Helana" << endl << endl;
 		int player1 = character();
 		cout << endl;
 		if (player1 == 1) {
-			cout << "You have chosen Haze." << endl;
+			cout << "You have chosen Haze." << endl << endl;
+			characters1 = "Haze";
 			cont++;
 		}
 		else if (player1 == 2) {
-			cout << "You have chosen Duce." << endl;
+			cout << "You have chosen Duce." << endl << endl;
+			characters1 = "Duce";
 			cont++;
 		}
 		else if (player1 == 3) {
-			cout << "You have chosen Charlotte." << endl;
+			cout << "You have chosen Charlotte." << endl << endl;
+			characters1 = "Charlotte";
 			cont++;
 		}
 		else if (player1 == 4) {
-			cout << "You have chosen Vivienne." << endl;
+			cout << "You have chosen Vivienne." << endl << endl;
+			characters1 = "Vivienne";
 			cont++;
 		}
 		else if (player1 == 5) {
-			cout << "You have chosen Jack." << endl;
+			cout << "You have chosen Jack." << endl << endl;
+			characters1 = "Jack";
 			cont++;
 		}
 		else if (player1 == 6) {
-			cout << "You have chosen Sebastian." << endl;
+			cout << "You have chosen Sebastian." << endl << endl;
+			characters1 = "Sebastian";
 			cont++;
 		}
 		else if (player1 == 7) {
-			cout << "You have chosen Ave." << endl;
+			cout << "You have chosen Ave." << endl << endl;
+			characters1 = "Ave";
 			cont++;
 		}
 		else if (player1 == 8) {
-			cout << "You have chosen Vex." << endl;
+			cout << "You have chosen Vex." << endl << endl;
+			characters1 = "Vex";
 			cont++;
 		}
 		else {
 			cout << "You have inputed an incorrect number. Please try again: " << endl;
-			//int player1 = character();
+			goto retry;
 		}
 
 		int Result = dice();
-		cout << "Your Number is: " << Result << endl;
+		cout << "Your Number is: " << Result << endl << endl;
 
 		if (cont == 1) {
 			cout << "You enter the main lobby of the mansion, you see a note on the floor, which says read me!" << endl;
 			cout << "The note reads: Welcome to Manson Hiest, where the only way to escape is to answer a bunch of riddles which reveal a secret word for you to use to escape!"
 				<< " May the odds be forever in your favor!" << endl;
+			roo:
 			cout << "You see several rooms ahead of you. You may choose which you would like to go in: " << endl << "1. Security Room" << endl << "2. Bathroom" << endl << "3. Kitchen" << endl << "4. Library" << endl << "5. Gym" << endl << "6. Stage" << endl << "7. Bedroom" << endl << "8. Greenhouse" << endl << endl;
 			int room = rooms();
 			cout << endl;
@@ -97,11 +109,17 @@ int main()
 			}
 			else {
 				cout << "You have inputed an incorrect number. Please try again: " << endl;
-				//int player1 = character();
+				goto roo;
 			}
 		}
 
 		cout << "You have 10 minutes to escape (600 seconds)! " << endl;
+		int lose = timer();
+
+
+		if (lose == 0) {
+			cout << "You lose! The door shuts and locks forever.";
+		}
 		
 	
 		//int Riddle1=1, Riddle2=2, Riddle3=3, Riddle4=4, Riddle5=5, Riddle6=6, Riddle7=7, Riddle8=8, Riddle9=9, Riddle10=10, Riddle11=11;
@@ -132,7 +150,7 @@ int main()
 		}
 		else if (random == 7)
 		{
-			cout << " I live in the jungle, my father was killed, I am to be king of the jungle one day, I sing I can’t wait to be king. Who am I? " << endl;
+			cout << " I live in the jungle, my father was killed, I am to be king of the jungle one day, I sing I canï¿½t wait to be king. Who am I? " << endl;
 		}
 		else if (random == 8)
 		{
@@ -140,15 +158,15 @@ int main()
 		}
 		else if (random == 9)
 		{
-			cout << "What goes up and down but doesn’t move? " << endl;
+			cout << "What goes up and down but doesnï¿½t move? " << endl;
 		}
 		else if (random == 10)
 		{
-			cout << "What has lots of eyes, but can’t see? " << endl;
+			cout << "What has lots of eyes, but canï¿½t see? " << endl;
 		}
 		else if (random == 11)
 		{
-			cout << "What has many teeth, but can’t bite? " << endl;
+			cout << "What has many teeth, but canï¿½t bite? " << endl;
 		}
 
 
@@ -174,7 +192,7 @@ int main()
 		return room;
 	}
 
-int dice()
+	int dice()
 	{
 	srand(time(NULL));
 	int Dice;
@@ -191,7 +209,7 @@ int dice()
 			Sleep(1000);
 			Timer--;
 		}
-		return 0;
+		return Timer;
 	}
 
 	int riddle()
