@@ -10,10 +10,13 @@ int character();
 int rooms();
 int riddle();
 int timer();
+int timer2();
 
 int main()
 	{
 	int cont = 0;
+	int corr = 0;
+	int final = 0;
 	string characters1;
 	retry:
 		cout << "Choose your character: " << endl << "1. Hacker: Haze (H4Z3) - Kevin Hayes" << endl << "2. Plumber: Duce Harmon" << endl << "3. Chef : Charlotte Hunter" << endl << "4. Bookworm : Vivienne Gray" << endl << "5. Bodybuilder : Jack Brooks" << endl << "6. Actor : Sebastian Moltif" << endl << "7. Normal : Ave Jones" << endl << "8. Survivalist : Vex Helana" << endl << endl;
@@ -71,113 +74,246 @@ int main()
 			cout << "You enter the main lobby of the mansion, you see a note on the floor, which says read me!" << endl;
 			cout << "The note reads: Welcome to Manson Hiest, where the only way to escape is to answer a bunch of riddles which reveal a secret word for you to use to escape!"
 				<< " May the odds be forever in your favor!" << endl;
-			roo:
-			cout << "You see several rooms ahead of you. You may choose which you would like to go in: " << endl << "1. Security Room" << endl << "2. Bathroom" << endl << "3. Kitchen" << endl << "4. Library" << endl << "5. Gym" << endl << "6. Stage" << endl << "7. Bedroom" << endl << "8. Greenhouse" << endl << endl;
-			int room = rooms();
-			cout << endl;
-			if (room == 1) {
-				cout << "You have chosen the secuity room." << endl;
-				cont++;
-			}
-			else if (room == 2) {
-				cout << "You have chosen the bathroom." << endl;
-				cont++;
-			}
-			else if (room == 3) {
-				cout << "You have chosen the kitchen." << endl;
-				cont++;
-			}
-			else if (room == 4) {
-				cout << "You have chosen the library." << endl;
-				cont++;
-			}
-			else if (room == 5) {
-				cout << "You have chosen the gym." << endl;
-				cont++;
-			}
-			else if (room == 6) {
-				cout << "You have chosen the stage." << endl;
-				cont++;
-			}
-			else if (room == 7) {
-				cout << "You have chosen the bedroom." << endl;
-				cont++;
-			}
-			else if (room == 8) {
-				cout << "You have chosen the greenhouse." << endl;
-				cont++;
+		roo:
+			if (final == 8) {
+				cout << "After you finish your final riddle you head to the basement door" << endl << "The door has a keypad on it to enter the letters you have obtained in the correct order";
+
 			}
 			else {
-				cout << "You have inputed an incorrect number. Please try again: " << endl;
-				goto roo;
+
+
+				cout << "You see several rooms ahead of you. You may choose which you would like to go in: " << endl << "1. Security Room" << endl << "2. Bathroom" << endl << "3. Kitchen" << endl << "4. Library" << endl << "5. Gym" << endl << "6. Stage" << endl << "7. Bedroom" << endl << "8. Greenhouse" << endl << endl;
+				int room = rooms();
+				cout << endl;
+				if (room == 1) {
+					cout << "You have chosen the secuity room." << endl;
+					cont++;
+				}
+				else if (room == 2) {
+					cout << "You have chosen the bathroom." << endl;
+					cont++;
+				}
+				else if (room == 3) {
+					cout << "You have chosen the kitchen." << endl;
+					cont++;
+				}
+				else if (room == 4) {
+					cout << "You have chosen the library." << endl;
+					cont++;
+				}
+				else if (room == 5) {
+					cout << "You have chosen the gym." << endl;
+					cont++;
+				}
+				else if (room == 6) {
+					cout << "You have chosen the stage." << endl;
+					cont++;
+				}
+				else if (room == 7) {
+					cout << "You have chosen the bedroom." << endl;
+					cont++;
+				}
+				else if (room == 8) {
+					cout << "You have chosen the greenhouse." << endl;
+					cont++;
+				}
+				else {
+					cout << "You have inputed an incorrect number. Please try again: " << endl;
+					goto roo;
+				}
 			}
 		}
 
-		cout << "You have 10 minutes to escape (600 seconds)! " << endl;
-		int lose = timer();
+			cout << "You have 10 minutes to escape (600 seconds)! " << endl;
+			if (cont == 2) {
+				string answer1;
+				int start = timer2();
 
+				int random = riddle();
+				if (random == 1)
+				{
+					cout << "What is a popular broadway show starring a historical figure from early U.S.history ? " << endl;
+				q1:
+					cout << endl;
+					cin >> answer1;
+					cout << endl;
+					if (answer1 == "Hamilton") {
+						corr++;
+					}
+					else {
+						cout << "incorrect try again";
+						goto q1;
+					}
+					
+				}
+				else if (random == 2)
+				{
+					cout << "I have branches, but no fruit, trunk or leaves. What am I? " << endl;
+				q2:
+					cout << endl;
+					cin >> answer1;
+					cout << endl;
+					if (answer1 == "Bank") {
+						corr++;
+					}
+					else {
+						cout << "incorrect try again";
+						goto q2;
+					}
+				}
+				else if (random == 3)
+				{
+					cout << "What has to be broken before you can use it? " << endl;
+				q3:
+					cout << endl;
+					cin >> answer1;
+					cout << endl;
+					if (answer1 == "Egg") {
+						corr++;
+					}
+					else {
+						cout << "incorrect try again";
+						goto q3;
+					}
+				}
+				else if (random == 4)
+				{
+					cout << "What number comes next in this pattern; 2,4,8,16,32...? " << endl;
+				q4:
+					cout << endl;
+					cin >> answer1;
+					cout << endl;
+					if (answer1 == "64") {
+						corr++;
+					}
+					else {
+						cout << "incorrect try again";
+						goto q4;
+					}
+				}
+				else if (random == 5)
+				{
+					cout << "What has one head, one foot and four legs " << endl;
+				q5:
+					cout << endl;
+					cin >> answer1;
+					cout << endl;
+					if (answer1 == "Bed") {
+						corr++;
+					}
+					else {
+						cout << "incorrect try again";
+						goto q5;
+					}
+				}
+				else if (random == 6)
+				{
+					cout << "I have two hands, but I can not scratch myself. What am I? " << endl;
+				q6:
+					cout << endl;
+					cin >> answer1;
+					cout << endl;
+					if (answer1 == "Clock") {
+						corr++;
+					}
+					else {
+						cout << "incorrect try again";
+						goto q6;
+					}
+				}
+				else if (random == 7)
+				{
+					cout << " I live in the jungle, my father was killed, I am to be king of the jungle one day, I sing I cant wait to be king. Who am I? " << endl;
+				q7:
+					cout << endl;
+					cin >> answer1;
+					cout << endl;
+					if (answer1 == "Simba") {
+						corr++;
+					}
+					else {
+						cout << "incorrect try again";
+						goto q7;
+					}
+				}
+				else if (random == 8)
+				{
+					cout << "How do you make number 7 an even number without using subtraction, addition, multiplication or division? " << endl;
+				q8:
+					cout << endl;
+					cin >> answer1;
+					cout << endl;
+					if (answer1 == "S") {
+						corr++;
+					}
+					else {
+						cout << "incorrect try again";
+						goto q8;
+					}
+				}
+				else if (random == 9)
+				{
+					cout << "What goes up and down but doesnt move? " << endl;
+				q9:
+					cout << endl;
+					cin >> answer1;
+					cout << endl;
+					if (answer1 == "Stairs") {
+						corr++;
+					}
+					else {
+						cout << "incorrect try again";
+						goto q9;
+					}
+				}
+				else if (random == 10)
+				{
+					cout << "What has lots of eyes, but cant see? " << endl;
+				q10:
+					cout << endl;
+					cin >> answer1;
+					cout << endl;
+					if (answer1 == "Potatos") {
+						corr++;
+					}
+					else {
+						cout << "incorrect try again";
+						goto q10;
+					}
+				}
+				else if (random == 11)
+				{
+					cout << "What has many teeth, but cant bite? " << endl;
+				q11:
+					cout << endl;
+					cin >> answer1;
+					cout << endl;
+					if (answer1 == "Comb") {
+						corr++;
+					}
+					else {
+						cout << "incorrect try again";
+						goto q11;
+					}
+				}
 
-		if (lose == 0) {
-			cout << "You lose! The door shuts and locks forever.";
-		}
-		
-	
-		//int Riddle1=1, Riddle2=2, Riddle3=3, Riddle4=4, Riddle5=5, Riddle6=6, Riddle7=7, Riddle8=8, Riddle9=9, Riddle10=10, Riddle11=11;
-		int random = riddle();
-		if (random == 1)
-		{
-			cout<<"What is a popular broadway show starring a historical figure from early U.S.history ? " << endl;
-		}
-		else if (random == 2)
-		{
-			cout << "I have branches, but no fruit, trunk or leaves. What am I? " << endl;
-		}
-		else if (random == 3)
-		{
-			cout << "What has to be broken before you can use it? " << endl;
-		}
-		else if (random == 4)
-		{
-			cout << "What number comes next in this pattern; 2,4,8,16,32...? " << endl;
-		}
-		else if (random == 5)
-		{
-			cout << "What has one head, one foot and four legs " << endl;
-		}
-		else if (random == 6)
-		{
-			cout << "I have two hands, but I can not scratch myself. What am I? " << endl;
-		}
-		else if (random == 7)
-		{
-			cout << " I live in the jungle, my father was killed, I am to be king of the jungle one day, I sing I can�t wait to be king. Who am I? " << endl;
-		}
-		else if (random == 8)
-		{
-			cout << "How do you make number 7 an even number without using subtraction, addition, multiplication or division? " << endl;
-		}
-		else if (random == 9)
-		{
-			cout << "What goes up and down but doesn�t move? " << endl;
-		}
-		else if (random == 10)
-		{
-			cout << "What has lots of eyes, but can�t see? " << endl;
-		}
-		else if (random == 11)
-		{
-			cout << "What has many teeth, but can�t bite? " << endl;
-		}
+				//int RandomRiddle = riddle();
+				//cout << "Your Riddle is: " << RandomRiddle << endl;
 
+			}
 
-		int RandomRiddle = riddle();
-		cout << "Your Riddle is: " << RandomRiddle << endl;
-		
-			
-		
-		
-	
-		
+			if (corr == 1) {
+				cout << "Congartulations! you have solved this riddle your letter is: " << endl << "The door opens and you enter the hallway which room do you go to next?" << endl;
+				corr--;
+				cont--;
+				final++;
+				goto roo;
+			}
+
+			int lose = timer();
+			if (lose == 0) {
+				cout << "You lose! The door shuts and locks forever.";
+			}
 	}
 
 	int character() {
@@ -203,7 +339,17 @@ int main()
 
 	int timer()
 	{
-		int Timer = 600;
+		int Timer = 10;
+		while (Timer > 0)
+		{
+			Sleep(1000);
+			Timer--;
+		}
+		return Timer;
+	}
+	int timer2()
+	{
+		int Timer = 1;
 		while (Timer > 0)
 		{
 			Sleep(1000);
