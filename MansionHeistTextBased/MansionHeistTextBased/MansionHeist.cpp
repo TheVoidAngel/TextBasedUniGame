@@ -4,6 +4,7 @@
 using namespace std;
 
 // Hey guys this is a test
+//2nd pull
 
 int dice();
 int character();
@@ -72,8 +73,9 @@ int main()
 
 		if (cont == 1) {
 			cout << "You enter the main lobby of the mansion, you see a note on the floor, which says read me!" << endl;
-			cout << "The note reads: Welcome to Manson Hiest, where the only way to escape is to answer a bunch of riddles which reveal a secret word for you to use to escape!"
+			cout << "The note reads: Welcome to Manson Hiest, where the only way to escape is to answer a bunch of riddles which reveal a secret word for you to use to escape!" << endl << "The catch is that you only have 1 minute to answer a riddle correctly! " << endl
 				<< " May the odds be forever in your favor!" << endl;
+			
 		roo:
 			if (final == 8) {
 				cout << "After you finish your final riddle you head to the basement door" << endl << "The door has a keypad on it to enter the letters you have obtained in the correct order";
@@ -124,7 +126,6 @@ int main()
 			}
 		}
 
-			cout << "You have 10 minutes to escape (600 seconds)! " << endl;
 			if (cont == 2) {
 				string answer1;
 				int start = timer2();
@@ -362,7 +363,7 @@ int main()
 	{
 
 		srand(time(NULL));
-		int Riddle1, Riddle2, Riddle3, Riddle4, Riddle5, Riddle6, Riddle7, Riddle8, Riddle9, Riddle10, Riddle11;
+		//int Riddle1, Riddle2, Riddle3, Riddle4, Riddle5, Riddle6, Riddle7, Riddle8, Riddle9, Riddle10, Riddle11;
 		int RandomRiddle = 0;
 		RandomRiddle = rand() % 11 + 1;
 		return RandomRiddle;
