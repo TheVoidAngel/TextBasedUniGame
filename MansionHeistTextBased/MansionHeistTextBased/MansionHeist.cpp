@@ -125,7 +125,7 @@ int main()
 				}
 			}
 		}
-
+		
 			if (cont == 2) {
 				string answer1;
 				int start = timer2();
@@ -136,16 +136,22 @@ int main()
 					cout << "What is a popular broadway show starring a historical figure from early U.S.history ? " << endl;
 				q1:
 					cout << endl;
-					cin >> answer1;
-					cout << endl;
-					if (answer1 == "Hamilton") {
-						corr++;
+					int lose = timer();
+					if (lose > 0) {
+						cin >> answer1;
+						cout << endl;
+						if (answer1 == "Hamilton") {
+							corr++;
+							goto yort;
+						}
+						else {
+							cout << "incorrect try again";
+							goto q1;
+						}
 					}
 					else {
-						cout << "incorrect try again";
-						goto q1;
+						cout << "You lose! The door shuts and locks forever.";
 					}
-					
 				}
 				else if (random == 2)
 				{
@@ -302,7 +308,7 @@ int main()
 				//cout << "Your Riddle is: " << RandomRiddle << endl;
 
 			}
-
+			yort:
 			if (corr == 1) {
 				cout << "Congartulations! you have solved this riddle your letter is: " << endl << "The door opens and you enter the hallway which room do you go to next?" << endl;
 				corr--;
@@ -311,10 +317,7 @@ int main()
 				goto roo;
 			}
 
-			int lose = timer();
-			if (lose == 0) {
-				cout << "You lose! The door shuts and locks forever.";
-			}
+			
 	}
 
 	int character() {
@@ -340,7 +343,7 @@ int main()
 
 	int timer()
 	{
-		int Timer = 10;
+		int Timer = 60;
 		while (Timer > 0)
 		{
 			Sleep(1000);

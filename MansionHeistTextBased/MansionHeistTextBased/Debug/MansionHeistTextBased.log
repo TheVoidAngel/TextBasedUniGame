@@ -1,16 +1,5 @@
 ﻿  MansionHeist.cpp
-C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(333,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(334,6): warning C4101: 'Dice': unreferenced local variable
-C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(364,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(365,79): warning C4101: 'Riddle9': unreferenced local variable
-C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(365,52): warning C4101: 'Riddle6': unreferenced local variable
-C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(365,25): warning C4101: 'Riddle3': unreferenced local variable
-C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(365,34): warning C4101: 'Riddle4': unreferenced local variable
-C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(365,16): warning C4101: 'Riddle2': unreferenced local variable
-C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(365,88): warning C4101: 'Riddle10': unreferenced local variable
-C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(365,70): warning C4101: 'Riddle8': unreferenced local variable
-C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(365,43): warning C4101: 'Riddle5': unreferenced local variable
-C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(365,7): warning C4101: 'Riddle1': unreferenced local variable
-C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(365,98): warning C4101: 'Riddle11': unreferenced local variable
-C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(365,61): warning C4101: 'Riddle7': unreferenced local variable
+C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(337,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(338,6): warning C4101: 'Dice': unreferenced local variable
+C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(368,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   MansionHeistTextBased.vcxproj -> C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\Debug\MansionHeistTextBased.exe
