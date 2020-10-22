@@ -1,5 +1,5 @@
 ﻿  MansionHeist.cpp
-C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(337,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(338,6): warning C4101: 'Dice': unreferenced local variable
-C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(368,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  MansionHeistTextBased.vcxproj -> C:\Users\Joshua\source\repos\TextBasedUniGame\MansionHeistTextBased\Debug\MansionHeistTextBased.exe
+C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(378,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(379,6): warning C4101: 'Dice': unreferenced local variable
+C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\MansionHeistTextBased\MansionHeist.cpp(410,13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  MansionHeistTextBased.vcxproj -> C:\Users\georg\Desktop\TextBasedUniGame\MansionHeistTextBased\Debug\MansionHeistTextBased.exe

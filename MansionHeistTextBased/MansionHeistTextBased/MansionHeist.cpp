@@ -13,151 +13,185 @@ int riddle();
 int timer();
 int timer2();
 
+
+
+
 int main()
-	{
+{
 	int cont = 0;
 	int corr = 0;
 	int final = 0;
 	string characters1;
-	retry:
-		cout << "Choose your character: " << endl << "1. Hacker: Haze (H4Z3) - Kevin Hayes" << endl << "2. Plumber: Duce Harmon" << endl << "3. Chef : Charlotte Hunter" << endl << "4. Bookworm : Vivienne Gray" << endl << "5. Bodybuilder : Jack Brooks" << endl << "6. Actor : Sebastian Moltif" << endl << "7. Normal : Ave Jones" << endl << "8. Survivalist : Vex Helana" << endl << endl;
-		int player1 = character();
-		cout << endl;
-		if (player1 == 1) {
-			cout << "You have chosen Haze." << endl << endl;
-			characters1 = "Haze";
-			cont++;
-		}
-		else if (player1 == 2) {
-			cout << "You have chosen Duce." << endl << endl;
-			characters1 = "Duce";
-			cont++;
-		}
-		else if (player1 == 3) {
-			cout << "You have chosen Charlotte." << endl << endl;
-			characters1 = "Charlotte";
-			cont++;
-		}
-		else if (player1 == 4) {
-			cout << "You have chosen Vivienne." << endl << endl;
-			characters1 = "Vivienne";
-			cont++;
-		}
-		else if (player1 == 5) {
-			cout << "You have chosen Jack." << endl << endl;
-			characters1 = "Jack";
-			cont++;
-		}
-		else if (player1 == 6) {
-			cout << "You have chosen Sebastian." << endl << endl;
-			characters1 = "Sebastian";
-			cont++;
-		}
-		else if (player1 == 7) {
-			cout << "You have chosen Ave." << endl << endl;
-			characters1 = "Ave";
-			cont++;
-		}
-		else if (player1 == 8) {
-			cout << "You have chosen Vex." << endl << endl;
-			characters1 = "Vex";
-			cont++;
+retry:
+	cout << "Choose your character: " << endl << "1. Hacker: Haze (H4Z3) - Kevin Hayes" << endl << "2. Plumber: Duce Harmon" << endl << "3. Chef : Charlotte Hunter" << endl << "4. Bookworm : Vivienne Gray" << endl << "5. Bodybuilder : Jack Brooks" << endl << "6. Actor : Sebastian Moltif" << endl << "7. Normal : Ave Jones" << endl << "8. Survivalist : Vex Helana" << endl << endl;
+	int player1 = character();
+	cout << endl;
+	if (player1 == 1) {
+		cout << "You have chosen Haze." << endl << endl;
+		characters1 = "Haze";
+		cont++;
+	}
+	else if (player1 == 2) {
+		cout << "You have chosen Duce." << endl << endl;
+		characters1 = "Duce";
+		cont++;
+	}
+	else if (player1 == 3) {
+		cout << "You have chosen Charlotte." << endl << endl;
+		characters1 = "Charlotte";
+		cont++;
+	}
+	else if (player1 == 4) {
+		cout << "You have chosen Vivienne." << endl << endl;
+		characters1 = "Vivienne";
+		cont++;
+	}
+	else if (player1 == 5) {
+		cout << "You have chosen Jack." << endl << endl;
+		characters1 = "Jack";
+		cont++;
+	}
+	else if (player1 == 6) {
+		cout << "You have chosen Sebastian." << endl << endl;
+		characters1 = "Sebastian";
+		cont++;
+	}
+	else if (player1 == 7) {
+		cout << "You have chosen Ave." << endl << endl;
+		characters1 = "Ave";
+		cont++;
+	}
+	else if (player1 == 8) {
+		cout << "You have chosen Vex." << endl << endl;
+		characters1 = "Vex";
+		cont++;
+	}
+	else {
+		cout << "You have inputed an incorrect number. Please try again: " << endl;
+		goto retry;
+	}
+
+	int Result = dice();
+	cout << "Your Number is: " << Result << endl << endl;
+
+	if (cont == 1) {
+		cout << "You enter the main lobby of the mansion, you see a note on the floor, which says read me!" << endl;
+		cout << "The note reads: Welcome to Manson Hiest, where the only way to escape is to answer a bunch of riddles which reveal a secret word for you to use to escape!" << endl << "The catch is that you only have 1 minute to answer a riddle correctly! " << endl
+			<< " May the odds be forever in your favor!" << endl;
+
+	roo:
+		if (final == 8) {
+			cout << "After you finish your final riddle you head to the basement door" << endl << "The door has a keypad on it to enter the letters you have obtained in the correct order";
+
 		}
 		else {
-			cout << "You have inputed an incorrect number. Please try again: " << endl;
-			goto retry;
-		}
 
-		int Result = dice();
-		cout << "Your Number is: " << Result << endl << endl;
 
-		if (cont == 1) {
-			cout << "You enter the main lobby of the mansion, you see a note on the floor, which says read me!" << endl;
-			cout << "The note reads: Welcome to Manson Hiest, where the only way to escape is to answer a bunch of riddles which reveal a secret word for you to use to escape!" << endl << "The catch is that you only have 1 minute to answer a riddle correctly! " << endl
-				<< " May the odds be forever in your favor!" << endl;
-			
-		roo:
-			if (final == 8) {
-				cout << "After you finish your final riddle you head to the basement door" << endl << "The door has a keypad on it to enter the letters you have obtained in the correct order";
-
+			cout << "You see several rooms ahead of you. You may choose which you would like to go in: " << endl << "1. Security Room" << endl << "2. Bathroom" << endl << "3. Kitchen" << endl << "4. Library" << endl << "5. Gym" << endl << "6. Stage" << endl << "7. Bedroom" << endl << "8. Greenhouse" << endl << endl;
+			int room = rooms();
+			cout << endl;
+			if (room == 1) {
+				cout << "You have chosen the secuity room." << endl;
+				cont++;
+			}
+			else if (room == 2) {
+				cout << "You have chosen the bathroom." << endl;
+				cont++;
+			}
+			else if (room == 3) {
+				cout << "You have chosen the kitchen." << endl;
+				cont++;
+			}
+			else if (room == 4) {
+				cout << "You have chosen the library." << endl;
+				cont++;
+			}
+			else if (room == 5) {
+				cout << "You have chosen the gym." << endl;
+				cont++;
+			}
+			else if (room == 6) {
+				cout << "You have chosen the stage." << endl;
+				cont++;
+			}
+			else if (room == 7) {
+				cout << "You have chosen the bedroom." << endl;
+				cont++;
+			}
+			else if (room == 8) {
+				cout << "You have chosen the greenhouse." << endl;
+				cont++;
 			}
 			else {
-
-
-				cout << "You see several rooms ahead of you. You may choose which you would like to go in: " << endl << "1. Security Room" << endl << "2. Bathroom" << endl << "3. Kitchen" << endl << "4. Library" << endl << "5. Gym" << endl << "6. Stage" << endl << "7. Bedroom" << endl << "8. Greenhouse" << endl << endl;
-				int room = rooms();
-				cout << endl;
-				if (room == 1) {
-					cout << "You have chosen the secuity room." << endl;
-					cont++;
-				}
-				else if (room == 2) {
-					cout << "You have chosen the bathroom." << endl;
-					cont++;
-				}
-				else if (room == 3) {
-					cout << "You have chosen the kitchen." << endl;
-					cont++;
-				}
-				else if (room == 4) {
-					cout << "You have chosen the library." << endl;
-					cont++;
-				}
-				else if (room == 5) {
-					cout << "You have chosen the gym." << endl;
-					cont++;
-				}
-				else if (room == 6) {
-					cout << "You have chosen the stage." << endl;
-					cont++;
-				}
-				else if (room == 7) {
-					cout << "You have chosen the bedroom." << endl;
-					cont++;
-				}
-				else if (room == 8) {
-					cout << "You have chosen the greenhouse." << endl;
-					cont++;
-				}
-				else {
-					cout << "You have inputed an incorrect number. Please try again: " << endl;
-					goto roo;
-				}
+				cout << "You have inputed an incorrect number. Please try again: " << endl;
+				goto roo;
 			}
 		}
-		
-			if (cont == 2) {
-				string answer1;
-				int start = timer2();
+	}
 
-				int random = riddle();
-				if (random == 1)
-				{
-					cout << "What is a popular broadway show starring a historical figure from early U.S.history ? " << endl;
-				q1:
-					cout << endl;
-					int lose = timer();
-					if (lose > 0) {
-						cin >> answer1;
-						cout << endl;
-						if (answer1 == "Hamilton") {
-							corr++;
-							goto yort;
-						}
-						else {
-							cout << "incorrect try again";
-							goto q1;
-						}
+
+		//int RandomRiddle = riddle();
+		//cout << "Your Riddle is: " << RandomRiddle << endl;
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+		
+		
+		if (cont == 2) {
+			string answer1;
+				
+	
+			
+			int random = riddle();
+			if (random == 1)
+			{
+				cout << "What is a popular broadway show starring a historical figure from early U.S.history ? " << endl;
+			q1:
+				
+				cout << endl;
+				cin >> answer1;
+				cout << endl;
+				int lose = timer();
+				if (lose > 0) {
+					
+					
+					if (answer1 == "Hamilton") {
+						
+						corr++;
+						goto yort;
+						
+						
 					}
 					else {
-						cout << "You lose! The door shuts and locks forever.";
+						cout << "incorrect try again";
+						goto q1;
 					}
 				}
-				else if (random == 2)
-				{
-					cout << "I have branches, but no fruit, trunk or leaves. What am I? " << endl;
-				q2:
-					cout << endl;
+				else {
+					cout << "You lose! The door shuts and locks forever.";
+				}
+			}
+			else if (random == 2)
+			{
+				cout << "I have branches, but no fruit, trunk or leaves. What am I? " << endl;
+			q2:
+				cout << endl;
+				int lose = timer();
+				cout << endl;
+				if (lose > 0) {
 					cin >> answer1;
 					cout << endl;
 					if (answer1 == "Bank") {
@@ -168,6 +202,14 @@ int main()
 						goto q2;
 					}
 				}
+				
+				else {
+					cout << "You lose! The door shuts and locks forever.";
+				}
+			}
+		
+	
+
 				else if (random == 3)
 				{
 					cout << "What has to be broken before you can use it? " << endl;
@@ -304,8 +346,6 @@ int main()
 					}
 				}
 
-				//int RandomRiddle = riddle();
-				//cout << "Your Riddle is: " << RandomRiddle << endl;
 
 			}
 			yort:
@@ -319,6 +359,7 @@ int main()
 
 			
 	}
+
 
 	int character() {
 		int player1;
@@ -343,7 +384,7 @@ int main()
 
 	int timer()
 	{
-		int Timer = 60;
+		int Timer = 10;
 		while (Timer > 0)
 		{
 			Sleep(1000);
@@ -353,14 +394,15 @@ int main()
 	}
 	int timer2()
 	{
-		int Timer = 1;
-		while (Timer > 0)
+		int Timer2 = 1;
+		while (Timer2 > 0)
 		{
 			Sleep(1000);
-			Timer--;
+			Timer2--;
 		}
-		return Timer;
+		return Timer2;
 	}
+	
 
 	int riddle()
 	{
