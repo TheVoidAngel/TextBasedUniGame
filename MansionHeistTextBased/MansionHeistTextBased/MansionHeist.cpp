@@ -189,20 +189,24 @@ retry:
 				cout << "I have branches, but no fruit, trunk or leaves. What am I? " << endl;
 			q2:
 				cout << endl;
-				int lose = timer();
+				cin >> answer1;
 				cout << endl;
+				int lose = timer();
 				if (lose > 0) {
-					cin >> answer1;
-					cout << endl;
+
+
 					if (answer1 == "Bank") {
+
 						corr++;
+						goto yort;
+
+
 					}
 					else {
 						cout << "incorrect try again";
 						goto q2;
 					}
 				}
-				
 				else {
 					cout << "You lose! The door shuts and locks forever.";
 				}
@@ -217,14 +221,26 @@ retry:
 					cout << endl;
 					cin >> answer1;
 					cout << endl;
-					if (answer1 == "Egg") {
-						corr++;
+					int lose = timer();
+					if (lose > 0) {
+
+
+						if (answer1 == "Egg") {
+
+							corr++;
+							goto yort;
+
+
+						}
+						else {
+							cout << "incorrect try again";
+							goto q3;
+						}
 					}
 					else {
-						cout << "incorrect try again";
-						goto q3;
+						cout << "You lose! The door shuts and locks forever.";
 					}
-				}
+			}
 				else if (random == 4)
 				{
 					cout << "What number comes next in this pattern; 2,4,8,16,32...? " << endl;
@@ -232,14 +248,26 @@ retry:
 					cout << endl;
 					cin >> answer1;
 					cout << endl;
-					if (answer1 == "64") {
-						corr++;
+					int lose = timer();
+					if (lose > 0) {
+
+
+						if (answer1 == "64") {
+
+							corr++;
+							goto yort;
+
+
+						}
+						else {
+							cout << "incorrect try again";
+							goto q4;
+						}
 					}
 					else {
-						cout << "incorrect try again";
-						goto q4;
+						cout << "You lose! The door shuts and locks forever.";
 					}
-				}
+			}
 				else if (random == 5)
 				{
 					cout << "What has one head, one foot and four legs " << endl;
@@ -247,14 +275,26 @@ retry:
 					cout << endl;
 					cin >> answer1;
 					cout << endl;
-					if (answer1 == "Bed") {
-						corr++;
+					int lose = timer();
+					if (lose > 0) {
+
+
+						if (answer1 == "Bed") {
+
+							corr++;
+							goto yort;
+
+
+						}
+						else {
+							cout << "incorrect try again";
+							goto q5;
+						}
 					}
 					else {
-						cout << "incorrect try again";
-						goto q5;
+						cout << "You lose! The door shuts and locks forever.";
 					}
-				}
+			}
 				else if (random == 6)
 				{
 					cout << "I have two hands, but I can not scratch myself. What am I? " << endl;
@@ -262,14 +302,26 @@ retry:
 					cout << endl;
 					cin >> answer1;
 					cout << endl;
-					if (answer1 == "Clock") {
-						corr++;
+					int lose = timer();
+					if (lose > 0) {
+
+
+						if (answer1 == "Clock") {
+
+							corr++;
+							goto yort;
+
+
+						}
+						else {
+							cout << "incorrect try again";
+							goto q6;
+						}
 					}
 					else {
-						cout << "incorrect try again";
-						goto q6;
+						cout << "You lose! The door shuts and locks forever.";
 					}
-				}
+			}
 				else if (random == 7)
 				{
 					cout << " I live in the jungle, my father was killed, I am to be king of the jungle one day, I sing I cant wait to be king. Who am I? " << endl;
@@ -277,14 +329,26 @@ retry:
 					cout << endl;
 					cin >> answer1;
 					cout << endl;
-					if (answer1 == "Simba") {
-						corr++;
+					int lose = timer();
+					if (lose > 0) {
+
+
+						if (answer1 == "Simba") {
+
+							corr++;
+							goto yort;
+
+
+						}
+						else {
+							cout << "incorrect try again";
+							goto q7;
+						}
 					}
 					else {
-						cout << "incorrect try again";
-						goto q7;
+						cout << "You lose! The door shuts and locks forever.";
 					}
-				}
+			}
 				else if (random == 8)
 				{
 					cout << "How do you make number 7 an even number without using subtraction, addition, multiplication or division? " << endl;
@@ -292,14 +356,26 @@ retry:
 					cout << endl;
 					cin >> answer1;
 					cout << endl;
-					if (answer1 == "S") {
-						corr++;
+					int lose = timer();
+					if (lose > 0) {
+
+
+						if (answer1 == "S") {
+
+							corr++;
+							goto yort;
+
+
+						}
+						else {
+							cout << "incorrect try again";
+							goto q8;
+						}
 					}
 					else {
-						cout << "incorrect try again";
-						goto q8;
+						cout << "You lose! The door shuts and locks forever.";
 					}
-				}
+			}
 				else if (random == 9)
 				{
 					cout << "What goes up and down but doesnt move? " << endl;
@@ -307,14 +383,26 @@ retry:
 					cout << endl;
 					cin >> answer1;
 					cout << endl;
-					if (answer1 == "Stairs") {
-						corr++;
+					int lose = timer();
+					if (lose > 0) {
+
+
+						if (answer1 == "Stairs") {
+
+							corr++;
+							goto yort;
+
+
+						}
+						else {
+							cout << "incorrect try again";
+							goto q9;
+						}
 					}
 					else {
-						cout << "incorrect try again";
-						goto q9;
+						cout << "You lose! The door shuts and locks forever.";
 					}
-				}
+			}
 				else if (random == 10)
 				{
 					cout << "What has lots of eyes, but cant see? " << endl;
@@ -322,14 +410,26 @@ retry:
 					cout << endl;
 					cin >> answer1;
 					cout << endl;
-					if (answer1 == "Potatos") {
-						corr++;
+					int lose = timer();
+					if (lose > 0) {
+
+
+						if (answer1 == "Potatos") {
+
+							corr++;
+							goto yort;
+
+
+						}
+						else {
+							cout << "incorrect try again";
+							goto q10;
+						}
 					}
 					else {
-						cout << "incorrect try again";
-						goto q10;
+						cout << "You lose! The door shuts and locks forever.";
 					}
-				}
+			}
 				else if (random == 11)
 				{
 					cout << "What has many teeth, but cant bite? " << endl;
@@ -337,14 +437,26 @@ retry:
 					cout << endl;
 					cin >> answer1;
 					cout << endl;
-					if (answer1 == "Comb") {
-						corr++;
+					int lose = timer();
+					if (lose > 0) {
+
+
+						if (answer1 == "Comb") {
+
+							corr++;
+							goto yort;
+
+
+						}
+						else {
+							cout << "incorrect try again";
+							goto q11;
+						}
 					}
 					else {
-						cout << "incorrect try again";
-						goto q11;
+						cout << "You lose! The door shuts and locks forever.";
 					}
-				}
+			}
 
 
 			}
