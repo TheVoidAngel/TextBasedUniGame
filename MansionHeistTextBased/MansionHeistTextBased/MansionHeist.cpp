@@ -10,8 +10,6 @@ int dice();
 int character();
 int rooms();
 int riddle();
-int timer();
-int timer2();
 
 
 
@@ -138,7 +136,16 @@ retry:
 		
 
 
-
+	/*int timer()
+	{
+		int Timer = 10;
+		while (Timer > 0)
+		{
+			Sleep(1000);
+			Timer--;
+		}
+		return Timer;
+	}*/
 
 
 
@@ -160,29 +167,43 @@ retry:
 			{
 				cout << "What is a popular broadway show starring a historical figure from early U.S.history ? " << endl;
 			q1:
-				
+
 				cout << endl;
 				cin >> answer1;
 				cout << endl;
-				int lose = timer();
-				if (lose > 0) {
-					
-					
-					if (answer1 == "Hamilton") {
-						
-						corr++;
-						goto yort;
-						
-						
+
+				int timer = 10;
+				while (timer > 0)
+				{
+					Sleep(1000);
+					timer--;
+					if (timer > 0) {
+
+
+
+						if (answer1 == "Hamilton")
+						{
+
+							corr++;
+							goto yort;
+
+
+						}
+						else
+						{
+							cout << "incorrect try again";
+							goto q1;
+						}
+
 					}
-					else {
-						cout << "incorrect try again";
-						goto q1;
+
+					if (timer == 0)
+					{
+						cout << "You lose! The door shuts and locks forever.";
 					}
 				}
-				else {
-					cout << "You lose! The door shuts and locks forever.";
-				}
+				
+				
 			}
 			else if (random == 2)
 			{
@@ -191,25 +212,36 @@ retry:
 				cout << endl;
 				cin >> answer1;
 				cout << endl;
-				int lose = timer();
-				if (lose > 0) {
+
+				int timer = 10;
+				while (timer > 0)
+				{
+					Sleep(1000);
+					timer--;
+					if (timer > 0) {
 
 
-					if (answer1 == "Bank") {
 
-						corr++;
-						goto yort;
+						if (answer1 == "Bank") {
+
+							corr++;
+							goto yort;
 
 
+						}
+						else {
+							cout << "incorrect try again";
+							goto q2;
+						}
 					}
-					else {
-						cout << "incorrect try again";
-						goto q2;
+
+
+					if (timer == 0)
+					{
+						cout << "You lose! The door shuts and locks forever.";
 					}
 				}
-				else {
-					cout << "You lose! The door shuts and locks forever.";
-				}
+				
 			}
 		
 	
@@ -221,25 +253,36 @@ retry:
 					cout << endl;
 					cin >> answer1;
 					cout << endl;
-					int lose = timer();
-					if (lose > 0) {
+					
+					int timer = 10;
+					while (timer > 0)
+					{
+						Sleep(1000);
+						timer--;
+						if (timer > 0) {
 
 
-						if (answer1 == "Egg") {
 
-							corr++;
-							goto yort;
+							if (answer1 == "Egg") {
+
+								corr++;
+								goto yort;
 
 
+							}
+							else {
+								cout << "incorrect try again";
+								goto q3;
+							}
 						}
-						else {
-							cout << "incorrect try again";
-							goto q3;
+
+
+						if (timer == 0)
+						{
+							cout << "You lose! The door shuts and locks forever.";
 						}
 					}
-					else {
-						cout << "You lose! The door shuts and locks forever.";
-					}
+					
 			}
 				else if (random == 4)
 				{
@@ -248,24 +291,35 @@ retry:
 					cout << endl;
 					cin >> answer1;
 					cout << endl;
-					int lose = timer();
-					if (lose > 0) {
+					
+					int timer = 10;
+					while (timer > 0)
+					{
+						Sleep(1000);
+						timer--;
+						if (timer > 0) {
 
 
-						if (answer1 == "64") {
 
-							corr++;
-							goto yort;
+							if (answer1 == "64") {
+
+								corr++;
+								goto yort;
 
 
+							}
+							else {
+								cout << "incorrect try again";
+								goto q4;
+
+							}
 						}
-						else {
-							cout << "incorrect try again";
-							goto q4;
+
+
+						if (timer == 0)
+						{
+							cout << "You lose! The door shuts and locks forever.";
 						}
-					}
-					else {
-						cout << "You lose! The door shuts and locks forever.";
 					}
 			}
 				else if (random == 5)
@@ -275,24 +329,34 @@ retry:
 					cout << endl;
 					cin >> answer1;
 					cout << endl;
-					int lose = timer();
-					if (lose > 0) {
+					
+					int timer = 10;
+					while (timer > 0)
+					{
+						Sleep(1000);
+						timer--;
+						if (timer > 0) {
 
 
-						if (answer1 == "Bed") {
 
-							corr++;
-							goto yort;
+							if (answer1 == "Bed") {
 
+								corr++;
+								goto yort;
+
+
+							}
+							else {
+								cout << "incorrect try again";
+								goto q5;
+							}
 
 						}
-						else {
-							cout << "incorrect try again";
-							goto q5;
+
+						if (timer == 0)
+						{
+							cout << "You lose! The door shuts and locks forever.";
 						}
-					}
-					else {
-						cout << "You lose! The door shuts and locks forever.";
 					}
 			}
 				else if (random == 6)
@@ -302,25 +366,36 @@ retry:
 					cout << endl;
 					cin >> answer1;
 					cout << endl;
-					int lose = timer();
-					if (lose > 0) {
+					
+					int timer = 10;
+					while (timer > 0)
+					{
+						Sleep(1000);
+						timer--;
+						if (timer > 0) {
 
 
-						if (answer1 == "Clock") {
 
-							corr++;
-							goto yort;
+							if (answer1 == "Clock") {
+
+								corr++;
+								goto yort;
 
 
+							}
+							else {
+								cout << "incorrect try again";
+								goto q6;
+							}
 						}
-						else {
-							cout << "incorrect try again";
-							goto q6;
+
+
+						if (timer == 0)
+						{
+							cout << "You lose! The door shuts and locks forever.";
 						}
 					}
-					else {
-						cout << "You lose! The door shuts and locks forever.";
-					}
+					
 			}
 				else if (random == 7)
 				{
@@ -329,25 +404,35 @@ retry:
 					cout << endl;
 					cin >> answer1;
 					cout << endl;
-					int lose = timer();
-					if (lose > 0) {
+					
+					int timer = 10;
+					while (timer > 0)
+					{
+						Sleep(1000);
+						timer--;
+						if (timer > 0) {
 
 
-						if (answer1 == "Simba") {
 
-							corr++;
-							goto yort;
+							if (answer1 == "Simba") {
+
+								corr++;
+								goto yort;
 
 
+							}
+							else {
+								cout << "incorrect try again";
+								goto q7;
+							}
 						}
-						else {
-							cout << "incorrect try again";
-							goto q7;
+
+
+						if (timer == 0) {
+							cout << "You lose! The door shuts and locks forever.";
 						}
 					}
-					else {
-						cout << "You lose! The door shuts and locks forever.";
-					}
+					
 			}
 				else if (random == 8)
 				{
@@ -356,25 +441,35 @@ retry:
 					cout << endl;
 					cin >> answer1;
 					cout << endl;
-					int lose = timer();
-					if (lose > 0) {
+					
+					int timer = 10;
+					while (timer > 0)
+					{
+						Sleep(1000);
+						timer--;
+						if (timer > 0) {
 
 
-						if (answer1 == "S") {
 
-							corr++;
-							goto yort;
+							if (answer1 == "S") {
+
+								corr++;
+								goto yort;
 
 
+							}
+							else {
+								cout << "incorrect try again";
+								goto q8;
+							}
 						}
-						else {
-							cout << "incorrect try again";
-							goto q8;
+
+
+						if (timer == 0) {
+							cout << "You lose! The door shuts and locks forever.";
 						}
 					}
-					else {
-						cout << "You lose! The door shuts and locks forever.";
-					}
+					
 			}
 				else if (random == 9)
 				{
@@ -383,25 +478,35 @@ retry:
 					cout << endl;
 					cin >> answer1;
 					cout << endl;
-					int lose = timer();
-					if (lose > 0) {
+					
+					int timer = 10;
+					while (timer > 0)
+					{
+						Sleep(1000);
+						timer--;
+						if (timer > 0) {
 
 
-						if (answer1 == "Stairs") {
 
-							corr++;
-							goto yort;
+							if (answer1 == "Stairs") {
+
+								corr++;
+								goto yort;
 
 
+							}
+							else {
+								cout << "incorrect try again";
+								goto q9;
+							}
 						}
-						else {
-							cout << "incorrect try again";
-							goto q9;
+
+
+						if (timer == 0) {
+							cout << "You lose! The door shuts and locks forever.";
 						}
 					}
-					else {
-						cout << "You lose! The door shuts and locks forever.";
-					}
+					
 			}
 				else if (random == 10)
 				{
@@ -410,25 +515,35 @@ retry:
 					cout << endl;
 					cin >> answer1;
 					cout << endl;
-					int lose = timer();
-					if (lose > 0) {
+					
+					int timer = 10;
+					while (timer > 0)
+					{
+						Sleep(1000);
+						timer--;
+						if (timer > 0) {
 
 
-						if (answer1 == "Potatos") {
 
-							corr++;
-							goto yort;
+							if (answer1 == "Potatos") {
+
+								corr++;
+								goto yort;
 
 
+							}
+							else {
+								cout << "incorrect try again";
+								goto q10;
+							}
 						}
-						else {
-							cout << "incorrect try again";
-							goto q10;
+
+
+						if (timer == 0) {
+							cout << "You lose! The door shuts and locks forever.";
 						}
 					}
-					else {
-						cout << "You lose! The door shuts and locks forever.";
-					}
+					
 			}
 				else if (random == 11)
 				{
@@ -437,25 +552,35 @@ retry:
 					cout << endl;
 					cin >> answer1;
 					cout << endl;
-					int lose = timer();
-					if (lose > 0) {
+					
+					int timer = 10;
+					while (timer > 0)
+					{
+						Sleep(1000);
+						timer--;
+						if (timer > 0) {
 
 
-						if (answer1 == "Comb") {
 
-							corr++;
-							goto yort;
+							if (answer1 == "Comb") {
+
+								corr++;
+								goto yort;
 
 
+							}
+							else {
+								cout << "incorrect try again";
+								goto q11;
+							}
 						}
-						else {
-							cout << "incorrect try again";
-							goto q11;
+
+
+						if (timer == 0) {
+							cout << "You lose! The door shuts and locks forever.";
 						}
 					}
-					else {
-						cout << "You lose! The door shuts and locks forever.";
-					}
+					
 			}
 
 
@@ -494,26 +619,7 @@ retry:
 		return Result;	
 	}
 
-	int timer()
-	{
-		int Timer = 10;
-		while (Timer > 0)
-		{
-			Sleep(1000);
-			Timer--;
-		}
-		return Timer;
-	}
-	int timer2()
-	{
-		int Timer2 = 1;
-		while (Timer2 > 0)
-		{
-			Sleep(1000);
-			Timer2--;
-		}
-		return Timer2;
-	}
+	
 	
 
 	int riddle()
