@@ -3,6 +3,7 @@
 #include <Windows.h>
 #include <string>
 #include <conio.h>
+#include <algorithm>
 using namespace std;
 
 // Hey guys this is a test
@@ -12,16 +13,26 @@ int dice();
 int character();
 int rooms();
 int riddle();
+int letters();
 
 
 
 
 int main()
 {
+	
 	int cont = 0;
 	int cont2 = 0;
 	int corr = 0;
 	int final = 0;
+	int Code1;
+	int Code2;
+	int Code3;
+	int Code4;
+	int Code5;
+	int Code6;
+	int Code7;
+	int Code8;
 	int Players;
 	int i;
 	string characters1;
@@ -80,7 +91,7 @@ retry:
 
 
 		int Result = dice();
-		cout << "Your Number is: " << Result << endl << endl;
+		cout << "Your Roll Number is: " << Result << endl << endl;
 	}
 
 
@@ -92,7 +103,9 @@ retry:
 		roo:
 			if (final == 8) {
 				cout << "After you finish your final riddle you head to the basement door" << endl << "The door has a keypad on it to enter the letters you have obtained in the correct order";
-
+				cout << "What is the secret Code? Hint: There are 26 letters in the alphabet!" << endl;
+				cin >> Code1 >> Code2 >> Code3 >> Code4 >> Code5 >> Code6 >> Code7 >> Code8;
+				
 			}
 			else {
 
@@ -149,18 +162,6 @@ retry:
 		
 
 
-	/*int timer()
-	{
-		int Timer = 10;
-		while (Timer > 0)
-		{
-			Sleep(1000);
-			Timer--;
-		}
-		return Timer;
-	}*/
-
-
 
 
 
@@ -193,8 +194,9 @@ retry:
 						{
 							if (answer1 == "Hamilton")
 							{
-
+								int Scramble1 = letters();
 								corr++;
+								cout << "Your Number is: " << Scramble1 << endl;
 								goto yort;
 
 
@@ -235,7 +237,9 @@ retry:
 
 							if (answer1 == "Bank") {
 
+								int Scramble2 = letters();
 								corr++;
+								cout << "Your Number is: " << Scramble2 << endl;
 								goto yort;
 
 
@@ -277,7 +281,9 @@ retry:
 
 								if (answer1 == "Egg") {
 
+									int Scramble3 = letters();
 									corr++;
+									cout << "Your Number is: " << Scramble3 << endl;
 									goto yort;
 
 
@@ -316,7 +322,9 @@ retry:
 
 								if (answer1 == "64") {
 
+									int Scramble4 = letters();
 									corr++;
+									cout << "Your Number is: " << Scramble4 << endl;
 									goto yort;
 
 
@@ -356,7 +364,9 @@ retry:
 
 								if (answer1 == "Bed") {
 
+									int Scramble5 = letters();
 									corr++;
+									cout << "Your Number is: " << Scramble5 << endl;
 									goto yort;
 
 
@@ -394,7 +404,9 @@ retry:
 
 								if (answer1 == "Clock") {
 
+									int Scramble6 = letters();
 									corr++;
+									cout << "Your Number is: " << Scramble6 << endl;
 									goto yort;
 
 
@@ -433,7 +445,9 @@ retry:
 
 								if (answer1 == "Simba") {
 
+									int Scramble7 = letters();
 									corr++;
+									cout << "Your Number is: " << Scramble7 << endl;
 									goto yort;
 
 
@@ -471,7 +485,9 @@ retry:
 
 								if (answer1 == "S") {
 
+									int Scramble8 = letters();
 									corr++;
+									cout << "Your Number is: " << Scramble8 << endl;
 									goto yort;
 
 
@@ -509,7 +525,9 @@ retry:
 
 								if (answer1 == "Stairs") {
 
+									int Scramble9 = letters();
 									corr++;
+									cout << "Your Number is: " << Scramble9 << endl;
 									goto yort;
 
 
@@ -547,7 +565,9 @@ retry:
 
 								if (answer1 == "Potatos") {
 
+									int Scramble10 = letters();
 									corr++;
+									cout << "Your Number is: " << Scramble10 << endl;
 									goto yort;
 
 
@@ -585,7 +605,9 @@ retry:
 
 								if (answer1 == "Comb") {
 
+									int Scramble11 = letters();
 									corr++;
+									cout << "Your Number is: " << Scramble11 << endl;
 									goto yort;
 
 
@@ -610,7 +632,7 @@ retry:
 	yort:
 		
 			if (corr == 1) {
-				cout << "Congartulations! you have solved this riddle your letter is: " << endl << "The door opens and you enter the hallway which room do you go to next?" << endl;
+				cout << "Congartulations!" <<endl << "The door opens and you enter the hallway which room do you go to next?" << endl;
 				corr--;
 				cont2--;
 				final++;
@@ -641,7 +663,6 @@ retry:
 	Result = rand() % 6 + 1;
 		return Result;	
 	}
-
 	
 	
 
@@ -656,10 +677,20 @@ retry:
 	}
 	int letters()
 	{
-
 		srand(time(NULL));
-		int rletters = 0;
-		rletters = rand() % 8 + 1;
-		return rletters;
-
+		
+		
+		int r = 0;
+		char Scramble;
+		Scramble = 'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z';
+		for (int i = 0; i < 26; i++)
+		{
+		
+			Scramble = rand() % 26 + 1;
+			return Scramble;
+		}
+		
+		
 	}
+	
+	
