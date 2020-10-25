@@ -1,6 +1,8 @@
 #include <iostream>
 #include <time.h>
 #include <Windows.h>
+#include <string>
+#include <conio.h>
 using namespace std;
 
 // Hey guys this is a test
@@ -17,6 +19,7 @@ int riddle();
 int main()
 {
 	int cont = 0;
+	int cont2 = 0;
 	int corr = 0;
 	int final = 0;
 	int Players;
@@ -81,7 +84,7 @@ retry:
 	}
 
 
-		if (cont == 1) {
+		if (cont > 0) {
 			cout << "You enter the main lobby of the mansion, you see a note on the floor, which says read me!" << endl;
 			cout << "The note reads: Welcome to Manson Hiest, where the only way to escape is to answer a bunch of riddles which reveal a secret word for you to use to escape!" << endl << "The catch is that you only have 1 minute to answer a riddle correctly! " << endl
 				<< " May the odds be forever in your favor!" << endl;
@@ -99,35 +102,35 @@ retry:
 				cout << endl;
 				if (room == 1) {
 					cout << "You have chosen the secuity room." << endl;
-					cont++;
+					cont2++;
 				}
 				else if (room == 2) {
 					cout << "You have chosen the bathroom." << endl;
-					cont++;
+					cont2++;
 				}
 				else if (room == 3) {
 					cout << "You have chosen the kitchen." << endl;
-					cont++;
+					cont2++;
 				}
 				else if (room == 4) {
 					cout << "You have chosen the library." << endl;
-					cont++;
+					cont2++;
 				}
 				else if (room == 5) {
 					cout << "You have chosen the gym." << endl;
-					cont++;
+					cont2++;
 				}
 				else if (room == 6) {
 					cout << "You have chosen the stage." << endl;
-					cont++;
+					cont2++;
 				}
 				else if (room == 7) {
 					cout << "You have chosen the bedroom." << endl;
-					cont++;
+					cont2++;
 				}
 				else if (room == 8) {
 					cout << "You have chosen the greenhouse." << endl;
-					cont++;
+					cont2++;
 				}
 				else {
 					cout << "You have inputed an incorrect number. Please try again: " << endl;
@@ -162,12 +165,9 @@ retry:
 
 
 
-
-
-
 		
 		
-		if (cont == 2) {
+		if (cont2 == 1) {
 			string answer1;
 				
 	
@@ -189,20 +189,21 @@ retry:
 					timer--;
 					if (timer > 0) {
 
-
-
-						if (answer1 == "Hamilton")
+						if (_kbhit())
 						{
+							if (answer1 == "Hamilton")
+							{
 
-							corr++;
-							goto yort;
+								corr++;
+								goto yort;
 
 
-						}
-						else
-						{
-							cout << "incorrect try again";
-							goto q1;
+							}
+							else
+							{
+								cout << "incorrect try again";
+								goto q1;
+							}
 						}
 
 					}
@@ -230,18 +231,19 @@ retry:
 					timer--;
 					if (timer > 0) {
 
+						if (_kbhit()) {
+
+							if (answer1 == "Bank") {
+
+								corr++;
+								goto yort;
 
 
-						if (answer1 == "Bank") {
-
-							corr++;
-							goto yort;
-
-
-						}
-						else {
-							cout << "incorrect try again";
-							goto q2;
+							}
+							else {
+								cout << "incorrect try again";
+								goto q2;
+							}
 						}
 					}
 
@@ -271,18 +273,19 @@ retry:
 						timer--;
 						if (timer > 0) {
 
+							if (_kbhit()) {
+
+								if (answer1 == "Egg") {
+
+									corr++;
+									goto yort;
 
 
-							if (answer1 == "Egg") {
-
-								corr++;
-								goto yort;
-
-
-							}
-							else {
-								cout << "incorrect try again";
-								goto q3;
+								}
+								else {
+									cout << "incorrect try again";
+									goto q3;
+								}
 							}
 						}
 
@@ -309,19 +312,20 @@ retry:
 						timer--;
 						if (timer > 0) {
 
+							if (_kbhit()) {
+
+								if (answer1 == "64") {
+
+									corr++;
+									goto yort;
 
 
-							if (answer1 == "64") {
+								}
+								else {
+									cout << "incorrect try again";
+									goto q4;
 
-								corr++;
-								goto yort;
-
-
-							}
-							else {
-								cout << "incorrect try again";
-								goto q4;
-
+								}
 							}
 						}
 
@@ -347,18 +351,20 @@ retry:
 						timer--;
 						if (timer > 0) {
 
+							if (_kbhit()) {
 
 
-							if (answer1 == "Bed") {
+								if (answer1 == "Bed") {
 
-								corr++;
-								goto yort;
+									corr++;
+									goto yort;
 
 
-							}
-							else {
-								cout << "incorrect try again";
-								goto q5;
+								}
+								else {
+									cout << "incorrect try again";
+									goto q5;
+								}
 							}
 
 						}
@@ -384,18 +390,19 @@ retry:
 						timer--;
 						if (timer > 0) {
 
+							if (_kbhit()) {
+
+								if (answer1 == "Clock") {
+
+									corr++;
+									goto yort;
 
 
-							if (answer1 == "Clock") {
-
-								corr++;
-								goto yort;
-
-
-							}
-							else {
-								cout << "incorrect try again";
-								goto q6;
+								}
+								else {
+									cout << "incorrect try again";
+									goto q6;
+								}
 							}
 						}
 
@@ -422,18 +429,19 @@ retry:
 						timer--;
 						if (timer > 0) {
 
+							if (_kbhit()) {
+
+								if (answer1 == "Simba") {
+
+									corr++;
+									goto yort;
 
 
-							if (answer1 == "Simba") {
-
-								corr++;
-								goto yort;
-
-
-							}
-							else {
-								cout << "incorrect try again";
-								goto q7;
+								}
+								else {
+									cout << "incorrect try again";
+									goto q7;
+								}
 							}
 						}
 
@@ -459,18 +467,19 @@ retry:
 						timer--;
 						if (timer > 0) {
 
+							if (_kbhit()) {
+
+								if (answer1 == "S") {
+
+									corr++;
+									goto yort;
 
 
-							if (answer1 == "S") {
-
-								corr++;
-								goto yort;
-
-
-							}
-							else {
-								cout << "incorrect try again";
-								goto q8;
+								}
+								else {
+									cout << "incorrect try again";
+									goto q8;
+								}
 							}
 						}
 
@@ -496,18 +505,19 @@ retry:
 						timer--;
 						if (timer > 0) {
 
+							if (_kbhit()) {
+
+								if (answer1 == "Stairs") {
+
+									corr++;
+									goto yort;
 
 
-							if (answer1 == "Stairs") {
-
-								corr++;
-								goto yort;
-
-
-							}
-							else {
-								cout << "incorrect try again";
-								goto q9;
+								}
+								else {
+									cout << "incorrect try again";
+									goto q9;
+								}
 							}
 						}
 
@@ -533,18 +543,19 @@ retry:
 						timer--;
 						if (timer > 0) {
 
+							if (_kbhit()) {
+
+								if (answer1 == "Potatos") {
+
+									corr++;
+									goto yort;
 
 
-							if (answer1 == "Potatos") {
-
-								corr++;
-								goto yort;
-
-
-							}
-							else {
-								cout << "incorrect try again";
-								goto q10;
+								}
+								else {
+									cout << "incorrect try again";
+									goto q10;
+								}
 							}
 						}
 
@@ -570,18 +581,19 @@ retry:
 						timer--;
 						if (timer > 0) {
 
+							if (_kbhit()) {
+
+								if (answer1 == "Comb") {
+
+									corr++;
+									goto yort;
 
 
-							if (answer1 == "Comb") {
-
-								corr++;
-								goto yort;
-
-
-							}
-							else {
-								cout << "incorrect try again";
-								goto q11;
+								}
+								else {
+									cout << "incorrect try again";
+									goto q11;
+								}
 							}
 						}
 
@@ -594,12 +606,13 @@ retry:
 			}
 
 
-			}
-			yort:
+		}
+	yort:
+		
 			if (corr == 1) {
 				cout << "Congartulations! you have solved this riddle your letter is: " << endl << "The door opens and you enter the hallway which room do you go to next?" << endl;
 				corr--;
-				cont--;
+				cont2--;
 				final++;
 				goto roo;
 			}
@@ -636,9 +649,17 @@ retry:
 	{
 
 		srand(time(NULL));
-		//int Riddle1, Riddle2, Riddle3, Riddle4, Riddle5, Riddle6, Riddle7, Riddle8, Riddle9, Riddle10, Riddle11;
 		int RandomRiddle = 0;
 		RandomRiddle = rand() % 11 + 1;
 		return RandomRiddle;
 		
+	}
+	int letters()
+	{
+
+		srand(time(NULL));
+		int rletters = 0;
+		rletters = rand() % 8 + 1;
+		return rletters;
+
 	}
