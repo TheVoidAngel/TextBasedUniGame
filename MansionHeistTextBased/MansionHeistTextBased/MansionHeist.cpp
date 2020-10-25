@@ -179,11 +179,8 @@ retry:
 				cout << "What is a popular broadway show starring a historical figure from early U.S.history ? " << endl;
 			q1:
 
-				cout << endl;
-				cin >> answer1;
-				cout << endl;
 
-				int timer = 10;
+				int timer = 30;
 				while (timer > 0)
 				{
 					Sleep(1000);
@@ -192,6 +189,9 @@ retry:
 
 						if (_kbhit())
 						{
+							cout << endl;
+							cin >> answer1;
+							cout << endl;
 							if (answer1 == "Hamilton")
 							{
 								int Scramble1 = letters();
@@ -203,7 +203,7 @@ retry:
 							}
 							else
 							{
-								cout << "incorrect try again";
+								cout << "incorrect try again" << endl;
 								goto q1;
 							}
 						}
@@ -222,11 +222,8 @@ retry:
 			{
 				cout << "I have branches, but no fruit, trunk or leaves. What am I? " << endl;
 			q2:
-				cout << endl;
-				cin >> answer1;
-				cout << endl;
 
-				int timer = 10;
+				int timer = 30;
 				while (timer > 0)
 				{
 					Sleep(1000);
@@ -234,7 +231,9 @@ retry:
 					if (timer > 0) {
 
 						if (_kbhit()) {
-
+							cout << endl;
+							cin >> answer1;
+							cout << endl;
 							if (answer1 == "Bank") {
 
 								int Scramble2 = letters();
@@ -245,7 +244,7 @@ retry:
 
 							}
 							else {
-								cout << "incorrect try again";
+								cout << "incorrect try again" << endl;
 								goto q2;
 							}
 						}
@@ -266,11 +265,8 @@ retry:
 				{
 					cout << "What has to be broken before you can use it? " << endl;
 				q3:
-					cout << endl;
-					cin >> answer1;
-					cout << endl;
 					
-					int timer = 10;
+					int timer = 30;
 					while (timer > 0)
 					{
 						Sleep(1000);
@@ -278,7 +274,9 @@ retry:
 						if (timer > 0) {
 
 							if (_kbhit()) {
-
+								cout << endl;
+								cin >> answer1;
+								cout << endl;
 								if (answer1 == "Egg") {
 
 									int Scramble3 = letters();
@@ -289,7 +287,7 @@ retry:
 
 								}
 								else {
-									cout << "incorrect try again";
+									cout << "incorrect try again" << endl;
 									goto q3;
 								}
 							}
@@ -307,11 +305,8 @@ retry:
 				{
 					cout << "What number comes next in this pattern; 2,4,8,16,32...? " << endl;
 				q4:
-					cout << endl;
-					cin >> answer1;
-					cout << endl;
 					
-					int timer = 10;
+					int timer = 30;
 					while (timer > 0)
 					{
 						Sleep(1000);
@@ -322,7 +317,13 @@ retry:
 
 								if (answer1 == "64") {
 
+
 									int Scramble4 = letters();
+
+									cout << endl;
+									cin >> answer1;
+									cout << endl;
+
 									corr++;
 									cout << "Your Number is: " << Scramble4 << endl;
 									goto yort;
@@ -330,7 +331,7 @@ retry:
 
 								}
 								else {
-									cout << "incorrect try again";
+									cout << "incorrect try again" << endl;
 									goto q4;
 
 								}
@@ -348,11 +349,8 @@ retry:
 				{
 					cout << "What has one head, one foot and four legs " << endl;
 				q5:
-					cout << endl;
-					cin >> answer1;
-					cout << endl;
 					
-					int timer = 10;
+					int timer = 30;
 					while (timer > 0)
 					{
 						Sleep(1000);
@@ -360,7 +358,9 @@ retry:
 						if (timer > 0) {
 
 							if (_kbhit()) {
-
+								cout << endl;
+								cin >> answer1;
+								cout << endl;
 
 								if (answer1 == "Bed") {
 
@@ -372,7 +372,7 @@ retry:
 
 								}
 								else {
-									cout << "incorrect try again";
+									cout << "incorrect try again" << endl;
 									goto q5;
 								}
 							}
@@ -389,11 +389,8 @@ retry:
 				{
 					cout << "I have two hands, but I can not scratch myself. What am I? " << endl;
 				q6:
-					cout << endl;
-					cin >> answer1;
-					cout << endl;
 					
-					int timer = 10;
+					int timer = 30;
 					while (timer > 0)
 					{
 						Sleep(1000);
@@ -401,7 +398,9 @@ retry:
 						if (timer > 0) {
 
 							if (_kbhit()) {
-
+								cout << endl;
+								cin >> answer1;
+								cout << endl;
 								if (answer1 == "Clock") {
 
 									int Scramble6 = letters();
@@ -412,7 +411,7 @@ retry:
 
 								}
 								else {
-									cout << "incorrect try again";
+									cout << "incorrect try again" << endl;
 									goto q6;
 								}
 							}
@@ -430,11 +429,8 @@ retry:
 				{
 					cout << " I live in the jungle, my father was killed, I am to be king of the jungle one day, I sing I cant wait to be king. Who am I? " << endl;
 				q7:
-					cout << endl;
-					cin >> answer1;
-					cout << endl;
-					
-					int timer = 10;
+
+					int timer = 30;
 					while (timer > 0)
 					{
 						Sleep(1000);
@@ -442,7 +438,9 @@ retry:
 						if (timer > 0) {
 
 							if (_kbhit()) {
-
+								cout << endl;
+								cin >> answer1;
+								cout << endl;
 								if (answer1 == "Simba") {
 
 									int Scramble7 = letters();
@@ -453,7 +451,7 @@ retry:
 
 								}
 								else {
-									cout << "incorrect try again";
+									cout << "incorrect try again" << endl;
 									goto q7;
 								}
 							}
@@ -470,11 +468,8 @@ retry:
 				{
 					cout << "How do you make number 7 an even number without using subtraction, addition, multiplication or division? " << endl;
 				q8:
-					cout << endl;
-					cin >> answer1;
-					cout << endl;
 					
-					int timer = 10;
+					int timer = 30;
 					while (timer > 0)
 					{
 						Sleep(1000);
@@ -482,7 +477,9 @@ retry:
 						if (timer > 0) {
 
 							if (_kbhit()) {
-
+								cout << endl;
+								cin >> answer1;
+								cout << endl;
 								if (answer1 == "S") {
 
 									int Scramble8 = letters();
@@ -493,7 +490,7 @@ retry:
 
 								}
 								else {
-									cout << "incorrect try again";
+									cout << "incorrect try again" << endl;
 									goto q8;
 								}
 							}
@@ -510,11 +507,8 @@ retry:
 				{
 					cout << "What goes up and down but doesnt move? " << endl;
 				q9:
-					cout << endl;
-					cin >> answer1;
-					cout << endl;
 					
-					int timer = 10;
+					int timer = 30;
 					while (timer > 0)
 					{
 						Sleep(1000);
@@ -522,7 +516,9 @@ retry:
 						if (timer > 0) {
 
 							if (_kbhit()) {
-
+								cout << endl;
+								cin >> answer1;
+								cout << endl;
 								if (answer1 == "Stairs") {
 
 									int Scramble9 = letters();
@@ -533,7 +529,7 @@ retry:
 
 								}
 								else {
-									cout << "incorrect try again";
+									cout << "incorrect try again" << endl;
 									goto q9;
 								}
 							}
@@ -550,11 +546,8 @@ retry:
 				{
 					cout << "What has lots of eyes, but cant see? " << endl;
 				q10:
-					cout << endl;
-					cin >> answer1;
-					cout << endl;
 					
-					int timer = 10;
+					int timer = 30;
 					while (timer > 0)
 					{
 						Sleep(1000);
@@ -562,7 +555,9 @@ retry:
 						if (timer > 0) {
 
 							if (_kbhit()) {
-
+								cout << endl;
+								cin >> answer1;
+								cout << endl;
 								if (answer1 == "Potatos") {
 
 									int Scramble10 = letters();
@@ -573,7 +568,7 @@ retry:
 
 								}
 								else {
-									cout << "incorrect try again";
+									cout << "incorrect try again" << endl;
 									goto q10;
 								}
 							}
@@ -590,19 +585,18 @@ retry:
 				{
 					cout << "What has many teeth, but cant bite? " << endl;
 				q11:
-					cout << endl;
-					cin >> answer1;
-					cout << endl;
 					
-					int timer = 10;
+					int timer = 30;
 					while (timer > 0)
 					{
 						Sleep(1000);
 						timer--;
 						if (timer > 0) {
-
+							
 							if (_kbhit()) {
-
+								cout << endl;
+								cin >> answer1;
+								cout << endl;
 								if (answer1 == "Comb") {
 
 									int Scramble11 = letters();
@@ -613,7 +607,7 @@ retry:
 
 								}
 								else {
-									cout << "incorrect try again";
+									cout << "incorrect try again" << endl;
 									goto q11;
 								}
 							}
