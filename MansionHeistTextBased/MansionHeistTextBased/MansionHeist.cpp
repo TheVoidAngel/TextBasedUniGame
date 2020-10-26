@@ -147,7 +147,7 @@ retry:
 }    
 		cout << "You enter the main lobby of the mansion, you see a note on the floor, which says read me!" << endl;
 		cout << "The note reads: Welcome to Manson Hiest, where the only way to escape is to answer a bunch of riddles which reveal a secret word for you to use to escape!" << endl << "The catch is that you only have 20 seconds to answer a riddle correctly! " << endl
-			<< " May the odds be forever in your favor!" << endl;
+			<< "May the odds be forever in your favor!" << endl;
 
 	roo:
 		if (final == 8) {
@@ -260,7 +260,7 @@ retry:
 				cout << "The eighth letter is incorrect!" << endl;
 			}
 
-			if (Code1 == Scramble1 && Code1 == Scramble1 && Code1 == Scramble1 && Code1 == Scramble1 && Code1 == Scramble1 && Code1 == Scramble1 && Code1 == Scramble1 && Code1 == Scramble1) {
+			if (Code1 == Scramble1 && Code2 == Scramble2 && Code3 == Scramble3 && Code4 == Scramble4 && Code5 == Scramble5 && Code6 == Scramble6 && Code7 == Scramble7 && Code8 == Scramble8) {
 				cout << "After you enter the numbers onto the keypad you hear the door softly creak open revealing an empty room." << endl << "You see a note on the ground that reads: So close yet so far. We will be meeting soon." << endl;
 				{
 					cout << "      ____________________        " << endl;
