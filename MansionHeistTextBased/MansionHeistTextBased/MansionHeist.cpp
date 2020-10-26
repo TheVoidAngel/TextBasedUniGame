@@ -152,7 +152,7 @@ retry:
 	roo:
 		if (final == 8) {
 
-			cout << "After you finish your final riddle you head to the basement door" << endl << "The door has a keypad on it to enter the numbers you have obtained in the correct order" << endl << "You must enter each number seperatly" << endl;
+			cout << "After you finish your final riddle you head to the basement door" << endl << "The door has a keypad on it to enter the numbers you have obtained in the correct order" << endl;
 			{
 				cout << "      ____________________        " << endl;
 				cout << "      |     ________     |         " << endl;
@@ -172,7 +172,7 @@ retry:
 
 
 			}
-			cout << "What is the secret Code? Hint: the order of the rooms" << endl;
+			cout << "What is the secret Code? Hint: the numbers you got after solving each riddle." << endl << "You must enter each number seperatly" << endl;
 			{
 				cout << " __________________        " << endl;
 				cout << " | oo |           |         " << endl;
@@ -391,21 +391,82 @@ retry:
 				random3++;
 			}
 			else if (room == 4) {
+				{
+					cout << "|||						|_|_|_|_|_|_|_|_|" << endl;
+					cout << "|||						|_|_|_|_|_|_|_|_|" << endl;
+					cout << "|||						|_|_|_|_|_|_|_|_|" << endl;
+					cout << "|||						|_|_|_|_|_|_|_|_|" << endl;
+					cout << "|||||||||||	||||||||||||||||||||||		|_|_|_|_|_|_|_|_|" << endl;
+					cout << "|||||||||||	||||||||||||||||||||||		|_|_|_|_|_|_|_|_|" << endl;
+					cout << "||	||	||||		  ||||		|_|_|_|_|_|_|_|_|" << endl;
+					cout << "||	||	||||		  ||||		|_|_|_|_|_|_|_|_|" << endl;
+					cout << "||	||	||||		  ||||		|_______________|" << endl;
+				}
 				cout << "You have chosen the library." << endl;
 				cont2++;
 				random4++;
 			}
 			else if (room == 5) {
+				{
+					cout << "                                                                   __________/                            " << endl;
+					cout << "                                                                  |__________|               " << endl;
+					cout << "                        ____________________                               /               " << endl;
+					cout << "                       |                    |___                          /                " << endl;
+					cout << "                       |____________________|___|                        /                   " << endl;
+					cout << "( )---( )             /                  |           ___________________/_____                                         " << endl;
+					cout << "( )---( )         ___/___             ___|___       |_________________________|                                  " << endl;
+				}
 				cout << "You have chosen the gym." << endl;
 				cont2++;
 				random5++;
 			}
 			else if (room == 6) {
+				{
+					cout << "           ______                                                     ______                                   " << endl;
+					cout << "          |      |                                                   |      |                        " << endl;
+					cout << "          |______|                                                   |______|                                  " << endl;
+					cout << "           /    |                                                     /    |                            " << endl;
+					cout << "          /     |                                                    /     |                               " << endl;
+					cout << "         /      |                                                   /      |                              " << endl;
+					cout << "                                                                                          " << endl;
+					cout << "        _____________                                               ______________                               " << endl;
+					cout << "       |             |                                             |              |   " << endl;
+					cout << "       |     ___     |                                             |     ___      |        " << endl;
+					cout << "       |    (   )    |                                             |    (   )     |        " << endl;
+					cout << "       |    (___)    |                   ()                        |    (___)     |          " << endl;
+					cout << "       |             |                   ||                        |              |           " << endl;
+					cout << "       |_____________|                   ||                        |______________|         " << endl;
+					cout << "       |             |                   ||                        |              |          " << endl;
+					cout << "       |     ___     |                   ||                        |     ___      |             " << endl;
+					cout << "       |    (   )    |                   ||                        |    (   )     |              " << endl;
+					cout << "       |    (___)    |                   ||                        |    (___)     |                  " << endl;
+					cout << "       |             |                ___||___                     |              |               " << endl;
+					cout << "       |_____________|               /________|                    |______________|                                                " << endl;
+					cout << "                                      ______                                                 " << endl;
+					cout << "                                _____|______|__                                         " << endl;
+					cout << "                              _|_______________|_                                                     " << endl;
+					cout << "                         ____|___________________|___                                                        " << endl;
+					cout << "                ________|____________________________|_________                                                           " << endl;
+					cout << "       ________|_______________________________________________|________                                                                " << endl;
+					cout << "  ____|_________________________________________________________________|__________                                                                                " << endl;
+					cout << " |_________________________________________________________________________________|                                                                                      " << endl;
+
+				}
 				cout << "You have chosen the stage." << endl;
 				cont2++;
 				random6++;
 			}
 			else if (room == 7) {
+				{
+					cout << " ____________                                __   " << endl;
+					cout << "(	     )                              /  |         " << endl;
+					cout << "(	     )                               ||   " << endl;
+					cout << "(____________)______________________         ||	                                " << endl;
+					cout << "|				    |  ||||||||||||	   " << endl;
+					cout << "|				    |  ||||||||||||" << endl;
+					cout << "|				    |  ||	 ||" << endl;
+					cout << "|___________________________________|  ||	 ||" << endl;
+				}
 				cout << "You have chosen the bedroom." << endl;
 				cont2++;
 				random7++;
