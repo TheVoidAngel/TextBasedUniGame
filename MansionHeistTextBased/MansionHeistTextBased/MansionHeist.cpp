@@ -123,6 +123,28 @@ retry:
 
 
 	if (cont > 0) {
+
+		{
+	cout << "                         |                             " << endl;
+	cout << "_________________________|_____________________      " << endl;
+	cout << "_________________________|_____________________       " << endl;
+	cout << " | | | | | | | | | | | | | | | | | | | | |  | |            " << endl;
+	cout << " | | | | | | | | | | | | | | | | | | | | |  | |           " << endl;
+	cout << " | | | | | | | | | | ____|_____| | | | | |  | |           " << endl;
+	cout << "_|_|_|_|_|_|_|_|_|__{          }___|_|_|_|__|_|_______" << endl;
+	cout << " |  _________________{        }_____________  |_|____|" << endl;
+	cout << " | |                  {______}             ||_|_____|" << endl;
+	cout << " | |  _                                  | ||_____| " << endl;
+	cout << " | | | }_                             |  |_|____|   " << endl;
+	cout << " | | |___|                          | | _|_____|    " << endl;
+	cout << " | |                             |  | ||______|     " << endl;
+	cout << "      { }                     |  | _||_______|      " << endl;
+	cout << "  _____|_____           O  |  | _||__________| | o  " << endl;
+	cout << " |__________|           |  | _||_____________||| | " << endl;
+	cout << " |          |    __     | _||_________________||_| " << endl;
+	cout << " |          |   /_/     ||______________________|| " << endl;
+
+}    
 		cout << "You enter the main lobby of the mansion, you see a note on the floor, which says read me!" << endl;
 		cout << "The note reads: Welcome to Manson Hiest, where the only way to escape is to answer a bunch of riddles which reveal a secret word for you to use to escape!" << endl << "The catch is that you only have 20 seconds to answer a riddle correctly! " << endl
 			<< " May the odds be forever in your favor!" << endl;
@@ -131,7 +153,38 @@ retry:
 		if (final == 8) {
 
 			cout << "After you finish your final riddle you head to the basement door" << endl << "The door has a keypad on it to enter the numbers you have obtained in the correct order" << endl << "You must enter each number seperatly" << endl;
+			{
+				cout << "      ____________________        " << endl;
+				cout << "      |     ________     |         " << endl;
+				cout << "      |     |      |     |         " << endl;
+				cout << "      |     |______|     |         " << endl;
+				cout << "      |                  |         " << endl;
+				cout << "      |             __ __|         " << endl;
+				cout << "      |             |_|_||         " << endl;
+				cout << "      |             |_|_||         " << endl;
+				cout << "      |             |_|_||         " << endl;
+				cout << "      |                  |         " << endl;
+				cout << "      |                  |         " << endl;
+				cout << "      |__________________|         " << endl;
+				cout << "      |__________________|         " << endl;
+
+
+
+
+			}
 			cout << "What is the secret Code? Hint: the order of the rooms" << endl;
+			{
+				cout << " __________________        " << endl;
+				cout << " | oo |           |         " << endl;
+				cout << " | oo | - - - - - |        " << endl;
+				cout << " | oo |___________|         " << endl;
+				cout << " |    |_1_|_2_|_3_|         " << endl;
+				cout << " |    |_4_|_5_|_6_|         " << endl;
+				cout << " |    |_7_|_8_|_9_|         " << endl;
+				cout << " |____|_*_|_0_|_#_|         " << endl;
+
+
+			}
 			cin >> Code1 >> Code2 >> Code3 >> Code4 >> Code5 >> Code6 >> Code7 >> Code8;
 			//int Scramble1 = letters();
 			cout << Scramble1;
@@ -209,10 +262,57 @@ retry:
 
 			if (Code1 == Scramble1 && Code1 == Scramble1 && Code1 == Scramble1 && Code1 == Scramble1 && Code1 == Scramble1 && Code1 == Scramble1 && Code1 == Scramble1 && Code1 == Scramble1) {
 				cout << "After you enter the numbers onto the keypad you hear the door softly creak open revealing an empty room." << endl << "You see a note on the ground that reads: So close yet so far. We will be meeting soon." << endl;
+				{
+					cout << "      ____________________        " << endl;
+					cout << "      |    |             |            " << endl;
+					cout << "      |    |             |            " << endl;
+					cout << "      |    |             |            " << endl;
+					cout << "      |    |             |            " << endl;
+					cout << "      |    |             |            " << endl;
+					cout << "      |    |             |            " << endl;
+					cout << "      |    |             |            " << endl;
+					cout << "      |    /             |            " << endl;
+					cout << "      |   /              |            " << endl;
+					cout << "      |  /               |            " << endl;
+					cout << "      | /                |            " << endl;
+					cout << "      |/                 |            " << endl;
+
+				}
 				cout << "The door slams shut sealing all of you inside with only a small light overhead for you to see." << endl << "Thank you for playing. We will be seeing you again soon~" << endl;
+				{
+
+					cout << " _______________________  " << endl;
+					cout << " |_________   _________|   " << endl;
+					cout << "           | |        " << endl;
+					cout << "           | |_____________        " << endl;
+					cout << "           | |_____  _____| " << endl;
+					cout << "           | |    |  |      " << endl;
+					cout << "           | |    |  |  " << endl;
+					cout << "           | |    |  |  " << endl;
+					cout << "           | |____|  |____  " << endl;
+					cout << "  _________| |_________  |      " << endl;
+					cout << " |_____________________|_| " << endl;
+					cout << "    INDEX INTERACTIVE                        " << endl;
+				}
 			}
 			else {
-				cout << "This code was incorrect. You have lost! The masion door shuts and locks you in forever";
+				cout << "This code was incorrect. You have lost! The mansion door shuts and locks you in forever";
+				{
+
+					cout << " _______________________  " << endl;
+					cout << " |_________   _________|   " << endl;
+					cout << "           | |        " << endl;
+					cout << "           | |_____________        " << endl;
+					cout << "           | |_____  _____| " << endl;
+					cout << "           | |    |  |      " << endl;
+					cout << "           | |    |  |  " << endl;
+					cout << "           | |    |  |  " << endl;
+					cout << "           | |____|  |____  " << endl;
+					cout << "  _________| |_________  |      " << endl;
+					cout << " |_____________________|_| " << endl;
+					cout << "    INDEX INTERACTIVE                        " << endl;
+				}
+
 			}
 
 		}
@@ -224,16 +324,68 @@ retry:
 			int room = rooms();
 			cout << endl;
 			if (room == 1) {
+				{
+					cout << "                 ____________" << endl;
+					cout << "                |            |                 _________" << endl;
+					cout << "                |            |                |_________| " << endl;
+					cout << "                |____________|                | | | | | | " << endl;
+					cout << "                      ||                      | | | | | |" << endl;
+					cout << "                    ||||||                    |_|_|_|_|_|" << endl;
+					cout << "||||||||||||||||||||||||||||||||||||||||||||| |______|  |" << endl;
+					cout << "||||||||||||||||||||||||||||||||||||||||||||| |______|  |" << endl;
+					cout << "||||||||||||||||||||||||||||||||||||||||||||| |______|  |" << endl;
+					cout << "||||||||||||||||||||||||||||||||||||||||||||| |______|__|" << endl;
+					cout << "|||||||||||                      |||||||||||| | | | | | |" << endl;
+					cout << "|||||||||||                      |||||||||||| | | | | | |" << endl;
+					cout << "|||||||||||                      |||||||||||| |_|_|_|_|_| " << endl;
+				}
 				cout << "You have chosen the secuity room." << endl;
 				cont2++;
 				random1++;
 			}
 			else if (room == 2) {
+				{
+					cout << "                                                                __________     " << endl;
+					cout << "                                                               |          |    " << endl;
+					cout << "                                            ()   ____          |          |      " << endl;
+					cout << "                                       ()___||___|__|___()     |          |     " << endl;
+					cout << "                                                               |          |     " << endl;
+					cout << "             ()__________()__________()                        |__________|     " << endl;
+					cout << "               |        |  |        |                                           " << endl;
+					cout << "               |        |  |        |                            ___|_____       " << endl;
+					cout << "               |________|  |________|                           (        )        " << endl;
+					cout << "    _____                                  ________       ________(____)_______" << endl;
+					cout << "    |   |                                 {        }      |        ____       |" << endl;
+					cout << "  __|________________________________     |        |      |___________________|" << endl;
+					cout << " {                                  }     |________|      |   ___   |   ___   |" << endl;
+					cout << "  {                                }     {__________}     |_________|_________|  " << endl;
+					cout << "   {                              }       {        }      |   ___   |   ___   |" << endl;
+					cout << "     {__________________________}          {______}       |_________|_________| " << endl;
+
+				}
 				cout << "You have chosen the bathroom." << endl;
 				cont2++;
 				random2++;
 			}
 			else if (room == 3) {
+				{
+					cout << "   _____________________                                                        ________________             " << endl;
+					cout << "   |___________________|                        _________                      |________________|" << endl;
+					cout << "   |                   |      ()    ()     ___ |        |______________________|                |" << endl;
+					cout << "   |         |  |      |_____{__}__(__)___|___||________|                      |                |" << endl;
+					cout << "   | _____   |  |      |                       | ______ |______________________|____            |" << endl;
+					cout << "   | |___|   |  |      |                       |        |  |                |  |                |" << endl;
+					cout << "   | |   |   |  |      |_______________________|        | ( )       __     ( ) |____o_o_o_o_____| " << endl;
+					cout << "   | |   |   |  |      |  |_______________|  | |________|            |                             " << endl;
+					cout << "   | |___|   |  |      |   |  o |       |   ( ) _____________________|_____________________________" << endl;
+					cout << "   |         |  |      |   |  o |_______|      | ________________|_____________|_____o_o_o_o______| " << endl;
+					cout << "   |         |  |      |   |____________|      |      |     |     |      |     |  |            | |   " << endl;
+					cout << "   |                   |_______________________|    | |   | |   | |    | |_____|  |            | | " << endl;
+					cout << "   |___________________|                       |      |     |     |      |     |  |____________| | " << endl;
+					cout << "   |___________________|_______________________|______|_____|_____|______|_____|_________________| " << endl;
+
+
+				}
 				cout << "You have chosen the kitchen." << endl;
 				cont2++;
 				random3++;
@@ -259,6 +411,21 @@ retry:
 				random7++;
 			}
 			else if (room == 8) {
+
+				{
+					cout << "                                            " << endl;
+					cout << "         <             >                       ( )     " << endl;
+					cout << "       <    >       <  <  >                  (    )    " << endl;
+					cout << "     <  <   > >    < <   >  >       ( )     (      )   " << endl;
+					cout << "    <  <    <  >  <  <   >   >    (     )    (    )   " << endl;
+					cout << "   < < <    > > >  <  < > >  >     (   )      (  )         " << endl;
+					cout << "    < < < > > >   <  <   >  >       ( )        ()     " << endl;
+					cout << "      < ( ) >       < ( )  >         |       {    }  " << endl;
+					cout << "         |             |          {     }   |______|       " << endl;
+					cout << "       {    }        {   }       |_______|                 " << endl;
+					cout << "     {        }    {       }                        " << endl;
+					cout << "     |________|    |_______|                              " << endl;
+				}
 				cout << "You have chosen the greenhouse." << endl;
 				cont2++;
 				random8++;
