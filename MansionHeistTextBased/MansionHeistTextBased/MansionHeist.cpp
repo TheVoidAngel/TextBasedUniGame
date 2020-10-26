@@ -56,7 +56,15 @@ int main()
 	int i;
 	string characters1;
 	cout << "Enter how many players are playing out of 8" << endl;
+replay:
 	cin >> Players;
+	if (Players < 8) {
+		goto retry;
+	}
+	else {
+		cout << "Incorrect amout of players please input a number between 1 and 8" << endl;
+			goto replay;
+	}
 retry:
 	for (i = 1; i <= Players; i++)
 	{
@@ -116,14 +124,14 @@ retry:
 
 	if (cont > 0) {
 		cout << "You enter the main lobby of the mansion, you see a note on the floor, which says read me!" << endl;
-		cout << "The note reads: Welcome to Manson Hiest, where the only way to escape is to answer a bunch of riddles which reveal a secret word for you to use to escape!" << endl << "The catch is that you only have 1 minute to answer a riddle correctly! " << endl
+		cout << "The note reads: Welcome to Manson Hiest, where the only way to escape is to answer a bunch of riddles which reveal a secret word for you to use to escape!" << endl << "The catch is that you only have 20 seconds to answer a riddle correctly! " << endl
 			<< " May the odds be forever in your favor!" << endl;
 
 	roo:
 		if (final == 8) {
 
-			cout << "After you finish your final riddle you head to the basement door" << endl << "The door has a keypad on it to enter the letters you have obtained in the correct order";
-			cout << "What is the secret Code? Hint: There are 26 letters in the alphabet!" << endl;
+			cout << "After you finish your final riddle you head to the basement door" << endl << "The door has a keypad on it to enter the numbers you have obtained in the correct order" << endl << "You must enter each number seperatly" << endl;
+			cout << "What is the secret Code? Hint: the order of the rooms" << endl;
 			cin >> Code1 >> Code2 >> Code3 >> Code4 >> Code5 >> Code6 >> Code7 >> Code8;
 			//int Scramble1 = letters();
 			cout << Scramble1;
@@ -199,11 +207,20 @@ retry:
 				cout << "The eighth letter is incorrect!" << endl;
 			}
 
+			if (Code1 == Scramble1 && Code1 == Scramble1 && Code1 == Scramble1 && Code1 == Scramble1 && Code1 == Scramble1 && Code1 == Scramble1 && Code1 == Scramble1 && Code1 == Scramble1) {
+				cout << "After you enter the numbers onto the keypad you hear the door softly creak open revealing an empty room." << endl << "You see a note on the ground that reads: So close yet so far. We will be meeting soon." << endl;
+				cout << "The door slams shut sealing all of you inside with only a small light overhead for you to see." << endl << "Thank you for playing. We will be seeing you again soon~" << endl;
+			}
+			else {
+				cout << "This code was incorrect. You have lost! The masion door shuts and locks you in forever";
+			}
+
 		}
 		else {
 
 
 			cout << "You see several rooms ahead of you. You may choose which you would like to go in: " << endl << "1. Security Room" << endl << "2. Bathroom" << endl << "3. Kitchen" << endl << "4. Library" << endl << "5. Gym" << endl << "6. Stage" << endl << "7. Bedroom" << endl << "8. Greenhouse" << endl << endl;
+			cout << "To enter a room please enter the coresponding number" << endl << "You may only enter each room once" << endl << endl;
 			int room = rooms();
 			cout << endl;
 			if (room == 1) {
@@ -277,11 +294,11 @@ retry:
 		//int random = riddle();
 		if (random1 == 1)
 		{
-			cout << "What is a popular broadway show starring a historical figure from early U.S.history ? " << endl;
+			cout << "What is a popular broadway show starring a historical figure from early U.S.history ? " << endl << "Make sure your answers are capitalised" << endl;
 		q1:
 
 
-			int timer = 30;
+			int timer = 20;
 			while (timer > 0)
 			{
 				Sleep(1000);
@@ -321,10 +338,10 @@ retry:
 		}
 		else if (random2 == 1)
 		{
-			cout << "I have branches, but no fruit, trunk or leaves. What am I? " << endl;
+			cout << "I have branches, but no fruit, trunk or leaves. What am I? " << endl << "Make sure your answers are capitalised" << endl;
 		q2:
 
-			int timer = 30;
+			int timer = 20;
 			while (timer > 0)
 			{
 				Sleep(1000);
@@ -364,10 +381,10 @@ retry:
 
 		else if (random3 == 1)
 		{
-			cout << "What has to be broken before you can use it? " << endl;
+			cout << "What has to be broken before you can use it? " << endl << "Make sure your answers are capitalised" << endl;
 		q3:
 
-			int timer = 30;
+			int timer = 20;
 			while (timer > 0)
 			{
 				Sleep(1000);
@@ -404,10 +421,10 @@ retry:
 		}
 		else if (random4 == 1)
 		{
-			cout << "What number comes next in this pattern; 2,4,8,16,32...? " << endl;
+			cout << "What number comes next in this pattern; 2,4,8,16,32...? " << endl << "Make sure your answers are capitalised" << endl;
 		q4:
 
-			int timer = 30;
+			int timer = 20;
 			while (timer > 0)
 			{
 				Sleep(1000);
@@ -449,10 +466,10 @@ retry:
 
 		else if (random5 == 1)
 		{
-			cout << "I have two hands, but I can not scratch myself. What am I? " << endl;
+			cout << "I have two hands, but I can not scratch myself. What am I? " << endl << "Make sure your answers are capitalised" << endl;
 		q6:
 
-			int timer = 30;
+			int timer = 20;
 			while (timer > 0)
 			{
 				Sleep(1000);
@@ -489,10 +506,10 @@ retry:
 		}
 		else if (random6 == 1)
 		{
-			cout << " I live in the jungle, my father was killed, I am to be king of the jungle one day, I sing I cant wait to be king. Who am I? " << endl;
+			cout << " I live in the jungle, my father was killed, I am to be king of the jungle one day, I sing I cant wait to be king. Who am I? " << endl << "Make sure your answers are capitalised" << endl;
 		q7:
 
-			int timer = 30;
+			int timer = 20;
 			while (timer > 0)
 			{
 				Sleep(1000);
@@ -529,10 +546,10 @@ retry:
 
 		else if (random7 == 1)
 		{
-			cout << "What goes up and down but doesnt move? " << endl;
+			cout << "What goes up and down but doesnt move? " << endl << "Make sure your answers are capitalised" << endl;
 		q9:
 
-			int timer = 30;
+			int timer = 20;
 			while (timer > 0)
 			{
 				Sleep(1000);
@@ -569,10 +586,10 @@ retry:
 
 		else if (random8 == 1)
 		{
-			cout << "What has many teeth, but cant bite? " << endl;
+			cout << "What has many teeth, but cant bite? " << endl << "Make sure your answers are capitalised" << endl;
 		q11:
 
-			int timer = 30;
+			int timer = 20;
 			while (timer > 0)
 			{
 				Sleep(1000);
@@ -612,7 +629,7 @@ retry:
 yort:
 
 	if (corr == 1) {
-		cout << "Congartulations!" << endl << "The door opens and you enter the hallway which room do you go to next?" << endl;
+		cout << "Congratulations!" << endl << "The door opens and you enter the hallway which room do you go to next?" << endl;
 		corr--;
 		cont2--;
 		final++;
