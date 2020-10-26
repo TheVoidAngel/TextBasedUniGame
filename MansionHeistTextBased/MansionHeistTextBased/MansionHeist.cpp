@@ -118,7 +118,7 @@ retry:
 
 
 		int Result = dice();
-		cout << "Your Roll Number is: " << Result << endl << endl;
+		cout << "Your Roll Number is: " << Result << endl << "This roll determines the order in which each player will have the final say on each question from highest to lowest." << endl << endl;
 	}
 
 
